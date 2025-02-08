@@ -27,9 +27,13 @@ public class CameraControls : MonoBehaviour
     void LateUpdate()
     {
         playerCam.transform.position = player.transform.position + offset;
-        
+
         // bleh can't get rotiation working
-        //playerCam.transform.rotation = player.transform.rotation;
+        /*
+        Quaternion currentRotation = playerCam.transform.rotation;
+        currentRotation.y = player.transform.rotation.y;
+        playerCam.transform.rotation = currentRotation;
+        */
     }
 
     private void Update()
