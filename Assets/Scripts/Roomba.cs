@@ -15,13 +15,13 @@ public class Roomba : MonoBehaviour
     private NavMeshAgent navMeshAgent;
 
 
-    private Rigidbody rbody;
+    //private Rigidbody rbody;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        rbody = GetComponent<Rigidbody>();
+        //rbody = GetComponent<Rigidbody>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = roombaSpeed;
     }
