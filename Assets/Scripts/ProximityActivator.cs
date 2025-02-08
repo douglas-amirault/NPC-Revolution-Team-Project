@@ -13,6 +13,7 @@ public class ProximityActivator : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            Time.timeScale = 0f;
             Debug.Log("Player Goal");
         }
 

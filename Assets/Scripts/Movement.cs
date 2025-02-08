@@ -32,6 +32,10 @@ public class Movement : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         Vector3 horizontalVelocity = transform.right * speed * moveHorizontal;
 
-        rigidBody.velocity = verticalVelocity + horizontalVelocity;
+        // still need y component of velocity so gravity cna take effect
+        Vector3 inputVelocity = verticalVelocity + horizontalVelocity;
+        rigidBody.velocity = new Vector3(inputVelocity.x, rigidBody.velocity.y, inputVelocity.z);
+
+
     }
 }
