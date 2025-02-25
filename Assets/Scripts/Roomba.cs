@@ -13,33 +13,41 @@ public class Roomba : MonoBehaviour
     public float roombaSpeed = 1f; // speed of roomba
 
     private NavMeshAgent navMeshAgent;
+    private Animator anim;
 
-
-    //private Rigidbody rbody;
+    private bool isOn;
     
 
     // Start is called before the first frame update
     void Start()
     {
         //rbody = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+
         navMeshAgent.speed = roombaSpeed;
+
+        isOn = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        // turn to position of player
-        if(player != null)
+     
+        // must be on before doing anything
+        if(IsPowerOn())
         {
-            navMeshAgent.SetDestination(player.position);
+            // turn to position of player
+            if (player != null)
+            {
+                navMeshAgent.SetDestination(player.position);
 
-            //rbody.MoveRotation()
+                //rbody.MoveRotation()
 
-            //rbody.MovePosition(Vector3.LerpUnclamped(this.transform.position, player.transform.position, roombaSpeed * Time.deltaTime));
-            //rbody.MovePosition(player.transform.position * Time.deltaTime * roombaSpeed);
+                //rbody.MovePosition(Vector3.LerpUnclamped(this.transform.position, player.transform.position, roombaSpeed * Time.deltaTime));
+                //rbody.MovePosition(player.transform.position * Time.deltaTime * roombaSpeed);
 
+            }
         }
 
     }
@@ -47,11 +55,25 @@ public class Roomba : MonoBehaviour
     private void OnTriggerEnter(Collider c)
     {
         // lose game if player contacts roomba
-        if (c.gameObject.CompareTag("Player"))
+        /*if (c.gameObject.CompareTag("Player"))
         {
             Time.timeScale = 0f;
             Debug.Log("Game Over");
-        }
+        }*/
+    }
+
+    public bool IsPowerOn()
+    {
+        return isOn;
+    }
+
+    public void TurnRoombaOff()
+    {
+        Debug.Log("Roomba turned off");
+        isOn = false;
+
+        //anim.SetBool("PowerOn", false);
+        anim.Play("RoombaOff");
     }
 
 }

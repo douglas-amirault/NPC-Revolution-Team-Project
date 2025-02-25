@@ -77,6 +77,37 @@ public class Movement : MonoBehaviour
             Time.timeScale = 0f;
             Debug.Log("Game Over");
         }
+
+        // shut off roomba instead of 
+
+        if (c.gameObject.CompareTag("Enemy"))
+        {
+            // check it's not powered off
+            Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
+            if(enemyScript.IsPowerOn())
+            {
+                Time.timeScale = 0f;
+                Debug.Log("Game Over");
+            }
+
+            
+        }
+        //c.transform.gameObject.name
+    }
+
+    private void OnTriggerEnter(Collider c)
+    {
+        // press button: roomba turn off
+        if(c.transform.gameObject.name == "PowerButton")
+        {
+            Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
+            enemyScript.TurnRoombaOff();
+
+            Debug.Log("Roomba should be off now");
+
+            //Debug.Log("Button Pressed");
+        }
+        
     }
 
 }
