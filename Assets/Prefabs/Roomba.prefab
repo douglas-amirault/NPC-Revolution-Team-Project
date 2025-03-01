@@ -344,8 +344,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574afbc58f23079449f14757be9c2b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roombaState: 0
   player: {fileID: 0}
   roombaSpeed: 20
+  waypoints: []
 --- !u!195 &2985743786293259720
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -400,7 +402,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 50
+  m_Radius: 60
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8729245120492306630
 GameObject:

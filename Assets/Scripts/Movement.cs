@@ -101,23 +101,35 @@ public class Movement : MonoBehaviour
         if (c.transform.gameObject.name == "PowerButton")
         {
             Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
-            enemyScript.TurnRoombaOff();
+            
+            if(enemyScript.IsPowerOn())
+            {
+                enemyScript.TurnRoombaOff();
 
-            Debug.Log("Roomba should be off now");
+                // add a bounce to get that character from the roomba to see the pretty animation
+                rigidBody.AddForce(Vector3.up * jumpStrength * 0.75f, ForceMode.Impulse);
 
-            //Debug.Log("Button Pressed");
+                Debug.Log("Roomba should be off now");
+
+            }
         }
 
         else if (c.transform.gameObject.name == "Roomba")
         {
             Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
-            enemyScript.Warning();
+            if(enemyScript.IsPowerOn())
+            {
+                enemyScript.Warning();
+            }
         }
 
         else if (c.transform.gameObject.name == "Body")
         {
             Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
-            enemyScript.ChasePlayer();
+            if (enemyScript.IsPowerOn())
+            {
+                enemyScript.ChasePlayer();
+            }
         }
 
     }
@@ -127,13 +139,19 @@ public class Movement : MonoBehaviour
         if (c.transform.gameObject.name == "Roomba")
         {
             Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
-            enemyScript.OffWarning();
+            if (enemyScript.IsPowerOn())
+            {
+                enemyScript.OffWarning();
+            }
         }
 
         else if (c.transform.gameObject.name == "Body")
         {
             Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
-            enemyScript.OffChasePlayer();
+            if (enemyScript.IsPowerOn())
+            {
+                enemyScript.OffChasePlayer();
+            }
         }
     }
 }
