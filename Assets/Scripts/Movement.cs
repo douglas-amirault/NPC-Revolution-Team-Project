@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
         // still need y component of velocity so gravity cna take effect
         Vector3 inputVelocity = verticalVelocity + horizontalVelocity;
         rigidBody.velocity = new Vector3(inputVelocity.x, rigidBody.velocity.y, inputVelocity.z);
-        
+
         // trying to get rotate working
         //rigidBody.MoveRotation(rigidBody.rotation * Quaternion.AngleAxis(-inputVelocity.x * Time.deltaTime * 1f, Vector3.up));
 
@@ -58,9 +58,9 @@ public class Movement : MonoBehaviour
             }
         }
     }
-        
 
-    
+
+
 
     private void OnCollisionEnter(Collision c)
     {
@@ -84,13 +84,13 @@ public class Movement : MonoBehaviour
         {
             // check it's not powered off
             Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
-            if(enemyScript.IsPowerOn())
+            if (enemyScript.IsPowerOn())
             {
                 Time.timeScale = 0f;
                 Debug.Log("Game Over");
             }
 
-            
+
         }
         //c.transform.gameObject.name
     }
@@ -98,7 +98,7 @@ public class Movement : MonoBehaviour
     private void OnTriggerEnter(Collider c)
     {
         // press button: roomba turn off
-        if(c.transform.gameObject.name == "PowerButton")
+        if (c.transform.gameObject.name == "PowerButton")
         {
             Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
             enemyScript.TurnRoombaOff();
@@ -107,7 +107,33 @@ public class Movement : MonoBehaviour
 
             //Debug.Log("Button Pressed");
         }
-        
+
+        else if (c.transform.gameObject.name == "Roomba")
+        {
+            Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
+            enemyScript.Warning();
+        }
+
+        else if (c.transform.gameObject.name == "Body")
+        {
+            Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
+            enemyScript.ChasePlayer();
+        }
+
     }
 
+    private void OnTriggerExit(Collider c)
+    {
+        if (c.transform.gameObject.name == "Roomba")
+        {
+            Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
+            enemyScript.OffWarning();
+        }
+
+        else if (c.transform.gameObject.name == "Body")
+        {
+            Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
+            enemyScript.OffChasePlayer();
+        }
+    }
 }

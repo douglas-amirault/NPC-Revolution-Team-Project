@@ -14,8 +14,11 @@ public class Roomba : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
     private Animator anim;
+    private Rigidbody rbody;
 
     private bool isOn;
+    private bool playerInSights = false;
+    private bool playerChasing = false;
     
 
     // Start is called before the first frame update
@@ -24,6 +27,7 @@ public class Roomba : MonoBehaviour
         //rbody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        rbody = GetComponent<Rigidbody>();
 
         navMeshAgent.speed = roombaSpeed;
 
@@ -35,7 +39,7 @@ public class Roomba : MonoBehaviour
     {
      
         // must be on before doing anything
-        if(IsPowerOn())
+        if (playerChasing && IsPowerOn())
         {
             // turn to position of player
             if (player != null)
@@ -50,6 +54,12 @@ public class Roomba : MonoBehaviour
             }
         }
 
+        // stay still but kep watching the player
+        else if (playerInSights && IsPowerOn())
+        {
+            // blep
+        }
+
     }
 
     private void OnTriggerEnter(Collider c)
@@ -60,6 +70,8 @@ public class Roomba : MonoBehaviour
             Time.timeScale = 0f;
             Debug.Log("Game Over");
         }*/
+
+
     }
 
     public bool IsPowerOn()
@@ -74,6 +86,42 @@ public class Roomba : MonoBehaviour
 
         //anim.SetBool("PowerOn", false);
         anim.Play("RoombaOff");
+    }
+
+    public void Warning()
+    {
+        // stop what we're doing there's a person
+        Debug.Log("Roomba detected a human");
+        navMeshAgent.SetDestination( rbody.position );
+        playerInSights = true;
+
+        anim.SetBool("Alert", true);
+    }
+
+    public void ChasePlayer()
+    {
+        Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
+        navMeshAgent.SetDestination(player.position);
+        playerChasing = true;
+
+        anim.SetBool("Chasing", true);
+    }
+
+    public void OffWarning()
+    {
+        Debug.Log("Roomba gave up");
+        playerInSights = false;
+
+        anim.SetBool("Alert", false);
+    }
+
+    public void OffChasePlayer()
+    {
+        Debug.Log("MUST HAVE BEEN THE WIND");
+        navMeshAgent.SetDestination(rbody.position);
+        playerChasing = false;
+
+        anim.SetBool("Chasing", false);
     }
 
 }
