@@ -44,14 +44,14 @@ public class Roomba : MonoBehaviour
 
     }
 
-    // private void OnTriggerEnter(Collider c)
-    // {
-    //     // lose game if player contacts roomba
-    //     if (c.gameObject.CompareTag("Player"))
-    //     {
-    //         Time.timeScale = 0f;
-    //         Debug.Log("Game Over");
-    //     }
-    // }
+    private void OnTriggerEnter(Collider c)
+    {
+        // lose game if player contacts roomba
+        if (c.gameObject.CompareTag("Player"))
+        {
+            Time.timeScale = 0f;
+            Debug.Log("Game Over");
+        }
+    }
 
 }
