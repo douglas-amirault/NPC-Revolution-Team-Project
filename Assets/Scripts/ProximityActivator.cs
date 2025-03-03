@@ -11,11 +11,11 @@ public class ProximityActivator : MonoBehaviour
     {
         //Debug.Log("Was triggered by: " + other.name);
 
-        if (other.CompareTag("Player"))
-        {
-            Time.timeScale = 0f;
-            Debug.Log("Player Goal");
-        }
+        // if (other.CompareTag("Player"))
+        // {
+        //     Time.timeScale = 0f;
+        //     Debug.Log("Player Goal");
+        // }
 
     }
 }
