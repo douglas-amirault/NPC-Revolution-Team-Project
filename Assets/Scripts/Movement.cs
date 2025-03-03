@@ -126,10 +126,23 @@ public class Movement : MonoBehaviour
         else if (c.transform.gameObject.name == "Body")
         {
             Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
-            if (enemyScript.IsPowerOn())
+            if(enemyScript != null)
             {
-                enemyScript.ChasePlayer();
+                if (enemyScript.IsPowerOn())
+                {
+                    enemyScript.ChasePlayer();
+                }
             }
+
+            /*JumpingRoomba enemyJumpScript = c.gameObject.GetComponentInParent<JumpingRoomba>();
+            if (enemyJumpScript != null)
+            {
+                if (enemyJumpScript.IsPowerOn())
+                {
+                    enemyJumpScript.ChasePlayer();
+                }
+            }*/
+
         }
 
     }

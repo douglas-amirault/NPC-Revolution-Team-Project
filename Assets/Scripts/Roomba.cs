@@ -8,6 +8,7 @@ using UnityEngine.AI;
 //   Since roomba movement will be broken up, creating a state machine instead of having a bunch of booleans
 public enum RoombaState
 {
+    Idle,
     FollowRoute, 
     PlayerInSights,
     ChasePlayer,
@@ -20,14 +21,14 @@ public enum RoombaState
 // if it hits the player, the game is over
 public class Roomba : MonoBehaviour
 {
-    private RoombaState roombaState; // state machine to keep track of roomba behavior
+    protected RoombaState roombaState; // state machine to keep track of roomba behavior
 
     public Transform player; // roomba target
     public float roombaSpeed = 1f; // speed of roomba
 
-    private NavMeshAgent navMeshAgent;
-    private Animator anim;
-    private Rigidbody rbody;
+    protected NavMeshAgent navMeshAgent;
+    protected Animator anim;
+    protected Rigidbody rbody;
 
     // waypoints for when its not chasing the player
     public GameObject[] waypoints;
@@ -38,7 +39,6 @@ public class Roomba : MonoBehaviour
     {
         roombaState = RoombaState.FollowRoute;
 
-        //rbody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         rbody = GetComponent<Rigidbody>();
@@ -101,8 +101,6 @@ public class Roomba : MonoBehaviour
             default:
                 break;
         }
-
-
     }
 
     private void OnTriggerEnter(Collider c)
@@ -123,7 +121,7 @@ public class Roomba : MonoBehaviour
         return !(roombaState == RoombaState.PowerOff);
     }
 
-    public void TurnRoombaOff()
+    public virtual void TurnRoombaOff()
     {
         Debug.Log("Roomba turned off");
         roombaState = RoombaState.PowerOff;
@@ -153,7 +151,7 @@ public class Roomba : MonoBehaviour
     }
 
     // player in range to be chased by roomba
-    public void ChasePlayer()
+    public virtual void ChasePlayer()
     {
         Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
         navMeshAgent.SetDestination(player.position);
@@ -162,7 +160,7 @@ public class Roomba : MonoBehaviour
         anim.SetBool("Chasing", true);
     }
 
-    public void OffChasePlayer()
+    public virtual void OffChasePlayer()
     {
         Debug.Log("MUST HAVE BEEN THE WIND");
         navMeshAgent.SetDestination(rbody.position);
