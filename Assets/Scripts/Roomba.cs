@@ -77,7 +77,7 @@ public class Roomba : MonoBehaviour
                 if (player != null)
                 {
                     rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((transform.position + transform.position), Vector3.up),
+                        Quaternion.LookRotation((player.transform.position + transform.position), Vector3.up),
                         1.0f));
 
                     //rbody.MovePosition(Vector3.LerpUnclamped(this.transform.position, player.transform.position, roombaSpeed * Time.deltaTime));
