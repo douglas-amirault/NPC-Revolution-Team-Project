@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraControls : MonoBehaviour
 {
     // toggle for debug purposes
     public Camera overhead;
-    private Camera playerCam;
-    private bool overheadOn;
+    public Camera playerCam;
+    public bool overheadOn;
 
     public GameObject player;
-    private Vector3 offset;
+    public Vector3 offset;
 
 
     void Start()
@@ -26,7 +27,13 @@ public class CameraControls : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        playerCam.transform.position = player.transform.position + offset;
+        if (!overheadOn)
+        {
+            playerCam.transform.position = player.transform.position + offset;
+            playerCam.transform.rotation = Quaternion.LookRotation(Vector3.up);
+        }
+
+        //playerCam.transform.position = player.transform.position + offset;
 
         // bleh can't get rotiation working
         /*
@@ -57,6 +64,8 @@ public class CameraControls : MonoBehaviour
                 overheadOn = true;
             }
         }
+
+
     }
 
 
