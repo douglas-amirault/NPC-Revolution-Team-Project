@@ -76,13 +76,13 @@ public class Roomba : MonoBehaviour
             case RoombaState.PlayerInSights:
                 if (player != null)
                 {
-                    /*rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
-                        1.0f));
-                    */
                     rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
+                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
+                        Time.deltaTime * roombaSpeed));
+                    
+                    /*rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
                         Quaternion.Inverse(Quaternion.LookRotation((player.position - transform.position), Vector3.up)),
-                        1.0f));
+                        1.0f));*/
                     
 
                     //rbody.MovePosition(Vector3.LerpUnclamped(this.transform.position, player.transform.position, roombaSpeed * Time.deltaTime));
