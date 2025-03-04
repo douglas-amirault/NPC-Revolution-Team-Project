@@ -76,9 +76,14 @@ public class Roomba : MonoBehaviour
             case RoombaState.PlayerInSights:
                 if (player != null)
                 {
-                    rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((player.transform.position + transform.position), Vector3.up),
+                    /*rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
+                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
                         1.0f));
+                    */
+                    rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
+                        Quaternion.Inverse(Quaternion.LookRotation((player.position - transform.position), Vector3.up)),
+                        1.0f));
+                    
 
                     //rbody.MovePosition(Vector3.LerpUnclamped(this.transform.position, player.transform.position, roombaSpeed * Time.deltaTime));
                     //rbody.MovePosition(player.transform.position * Time.deltaTime * roombaSpeed);
@@ -138,6 +143,7 @@ public class Roomba : MonoBehaviour
         Debug.Log("Roomba detected a human");
         navMeshAgent.SetDestination( rbody.position );
         roombaState = RoombaState.PlayerInSights;
+        rbody.freezeRotation = true;
 
         anim.SetBool("Alert", true);
     }
