@@ -1,0 +1,21 @@
+Online Tutorials:
+
+Third Person Shooter (Unity Tutorial) Ep 1 Movement and Camera
+https://www.youtube.com/watch?v=KCYr5pFC6Sw&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx
+
+Third Person Shooter (Unity Tutorial) Ep 2 Animation Blend Trees
+https://www.youtube.com/watch?v=IhEgT4yMLMA&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx&index=4
+
+Third Person Shooter (Unity Tutorial) Ep 3 Finite State Machines
+https://www.youtube.com/watch?v=bH6ueZpF58A&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx&index=5
+
+Third Person Shooter (Unity Tutorial) Ep 12 Jumping
+https://www.youtube.com/watch?v=qRY0d5QEGnc&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx&index=16
+
+Assets:
+
+Low Poly Prototype Character:
+https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-prototype-character-294200?srsltid=AfmBOoovUH4d3n4OEeA63xlLxu5gFKKRAYNFACkGLPzCp8-asNbs4y76
+
+FREE - 32 RPG Animations
+https://assetstore.unity.com/packages/3d/animations/free-32-rpg-animations-215058
