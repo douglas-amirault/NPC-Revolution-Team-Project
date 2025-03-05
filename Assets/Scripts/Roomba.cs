@@ -12,10 +12,12 @@ public enum RoombaState
     FollowRoute, 
     PlayerInSights,
     ChasePlayer,
+    ReadyToCharge,
+    Charge,
     PowerOff
 }
 
-[RequireComponent(typeof(NavMeshAgent), typeof(Animator), typeof(Rigidbody))]
+[RequireComponent(typeof(Animator), typeof(Rigidbody))]
 // this file depicts the behavior of the basic roomba enemy
 // this enemy is made to always track the player obect
 // if it hits the player, the game is over
