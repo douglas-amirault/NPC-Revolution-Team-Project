@@ -1090,8 +1090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06fb98bc47100a40b118927910d78bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 400
-  sensY: 400
+  senseX: 0
+  senseY: 0
   orientation: {fileID: 1290439327}
 --- !u!4 &391473320 stripped
 Transform:
@@ -2088,7 +2088,7 @@ PrefabInstance:
     - target: {fileID: 2985743786293259720, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -3645,10 +3645,6 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   horizontalInput: 0
   verticalInput: 0
-  groundYOffset: 0
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 256
   gravityValue: -9.81
   jumpValue: 60
   descentValue: -20
