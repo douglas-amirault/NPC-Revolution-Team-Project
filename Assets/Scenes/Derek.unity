@@ -6083,6 +6083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b786d8a690458d241a6a889934879448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorLevelSound: {fileID: 8300000, guid: 3513162ad72469e43904dd22b719ea81, type: 3}
 --- !u!54 &845843851
 Rigidbody:
   m_ObjectHideFlags: 0
