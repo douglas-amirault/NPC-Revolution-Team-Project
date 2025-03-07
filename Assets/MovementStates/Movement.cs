@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
         // still need y component of velocity so gravity cna take effect
         Vector3 inputVelocity = verticalVelocity + horizontalVelocity;
         rigidBody.velocity = new Vector3(inputVelocity.x, rigidBody.velocity.y, inputVelocity.z);
-        
+
         // trying to get rotate working
         //rigidBody.MoveRotation(rigidBody.rotation * Quaternion.AngleAxis(-inputVelocity.x * Time.deltaTime * 1f, Vector3.up));
 
@@ -58,9 +58,9 @@ public class Movement : MonoBehaviour
             }
         }
     }
-        
 
-    
+
+
 
     private void OnCollisionEnter(Collision c)
     {
@@ -77,6 +77,94 @@ public class Movement : MonoBehaviour
             Time.timeScale = 0f;
             Debug.Log("Game Over");
         }
+
+        // shut off roomba instead of 
+
+        if (c.gameObject.CompareTag("Enemy"))
+        {
+            // check it's not powered off
+            Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
+            if (enemyScript.IsPowerOn())
+            {
+                Time.timeScale = 0f;
+                Debug.Log("Game Over");
+            }
+
+
+        }
+        //c.transform.gameObject.name
     }
 
+    private void OnTriggerEnter(Collider c)
+    {
+        // press button: roomba turn off
+        if (c.transform.gameObject.name == "PowerButton")
+        {
+            Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
+            
+            if(enemyScript.IsPowerOn())
+            {
+                enemyScript.TurnRoombaOff();
+
+                // add a bounce to get that character from the roomba to see the pretty animation
+                rigidBody.AddForce(Vector3.up * jumpStrength * 0.75f, ForceMode.Impulse);
+
+                Debug.Log("Roomba should be off now");
+
+            }
+        }
+
+        else if (c.transform.gameObject.name == "Roomba")
+        {
+            Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
+            if(enemyScript.IsPowerOn())
+            {
+                enemyScript.Warning();
+            }
+        }
+
+        else if (c.transform.gameObject.name == "Body")
+        {
+            Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
+            if(enemyScript != null)
+            {
+                if (enemyScript.IsPowerOn())
+                {
+                    enemyScript.ChasePlayer();
+                }
+            }
+
+            /*JumpingRoomba enemyJumpScript = c.gameObject.GetComponentInParent<JumpingRoomba>();
+            if (enemyJumpScript != null)
+            {
+                if (enemyJumpScript.IsPowerOn())
+                {
+                    enemyJumpScript.ChasePlayer();
+                }
+            }*/
+
+        }
+
+    }
+
+    private void OnTriggerExit(Collider c)
+    {
+        if (c.transform.gameObject.name == "Roomba")
+        {
+            Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
+            if (enemyScript.IsPowerOn())
+            {
+                enemyScript.OffWarning();
+            }
+        }
+
+        else if (c.transform.gameObject.name == "Body")
+        {
+            Roomba enemyScript = c.gameObject.GetComponentInParent<Roomba>();
+            if (enemyScript.IsPowerOn())
+            {
+                enemyScript.OffChasePlayer();
+            }
+        }
+    }
 }

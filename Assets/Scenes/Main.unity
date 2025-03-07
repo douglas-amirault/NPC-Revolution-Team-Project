@@ -3610,9 +3610,9 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1898028616
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2121751282407643393, guid: 267f11252bf5f6c4eb5fb5a1f14604d8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2121751282120296265}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898028612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
