@@ -124,13 +124,13 @@ public class Roomba : MonoBehaviour
 
     public bool IsPowerOn()
     {
-        Debug.Log(roombaState);
+        // Debug.Log(roombaState);
         return !(roombaState == RoombaState.PowerOff);
     }
 
     public virtual void TurnRoombaOff()
     {
-        Debug.Log("Roomba turned off");
+        // Debug.Log("Roomba turned off");
         roombaState = RoombaState.PowerOff;
         navMeshAgent.isStopped = true;
         rbody.freezeRotation = true;
@@ -142,7 +142,7 @@ public class Roomba : MonoBehaviour
     public void Warning()
     {
         // stop what we're doing there's a person
-        Debug.Log("Roomba detected a human");
+        // Debug.Log("Roomba detected a human");
         navMeshAgent.SetDestination( rbody.position );
         roombaState = RoombaState.PlayerInSights;
         rbody.freezeRotation = true;
@@ -152,7 +152,7 @@ public class Roomba : MonoBehaviour
 
     public void OffWarning()
     {
-        Debug.Log("Roomba gave up");
+        // Debug.Log("Roomba gave up");
         roombaState = RoombaState.FollowRoute;
 
         anim.SetBool("Alert", false);
@@ -161,7 +161,7 @@ public class Roomba : MonoBehaviour
     // player in range to be chased by roomba
     public virtual void ChasePlayer()
     {
-        Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
+        // Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
         navMeshAgent.SetDestination(player.position);
         roombaState = RoombaState.ChasePlayer;
 
@@ -170,7 +170,7 @@ public class Roomba : MonoBehaviour
 
     public virtual void OffChasePlayer()
     {
-        Debug.Log("MUST HAVE BEEN THE WIND");
+        // Debug.Log("MUST HAVE BEEN THE WIND");
         navMeshAgent.SetDestination(rbody.position);
         roombaState = RoombaState.PlayerInSights;
 

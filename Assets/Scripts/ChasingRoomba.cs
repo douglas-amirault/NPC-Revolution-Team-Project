@@ -48,7 +48,7 @@ public class ChasingRoomba : Roomba
 
     public override void TurnRoombaOff()
     {
-        Debug.Log("Roomba jumping turned off");
+        // Debug.Log("Roomba jumping turned off");
         roombaState = RoombaState.PowerOff;
         rbody.freezeRotation = true;
 
@@ -60,7 +60,7 @@ public class ChasingRoomba : Roomba
     {
         if (roombaState != RoombaState.Charge)
         {
-            Debug.Log("Roomba detected IS RUNNINGG AFTER YOU CHASE!");
+            // Debug.Log("Roomba detected IS RUNNINGG AFTER YOU CHASE!");
             roombaState = RoombaState.ReadyToCharge;
 
             anim.SetBool("ChargeRun", true);
@@ -69,7 +69,7 @@ public class ChasingRoomba : Roomba
 
     public override void OffChasePlayer()
     {
-        Debug.Log("Actually...ignore this state, we stop when we hit a wall or player");
+        // Debug.Log("Actually...ignore this state, we stop when we hit a wall or player");
     }
 
     // stop this funky ride when we hit a wall
@@ -77,7 +77,7 @@ public class ChasingRoomba : Roomba
     {
         if (roombaState == RoombaState.Charge)
         {
-            Debug.Log("bonk");
+            // Debug.Log("bonk");
             roombaState = RoombaState.Idle;
 
             anim.SetBool("ChargeRun", false);

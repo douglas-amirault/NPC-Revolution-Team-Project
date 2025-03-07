@@ -28,16 +28,16 @@ public class KillerWallAudio : MonoBehaviour
         {
             if (killerWallSound != null)
             {
-                Debug.Log("KillerWallAudio::OnTriggerEnter: killerWallSound was NOT null");
+                // Debug.Log("KillerWallAudio::OnTriggerEnter: killerWallSound was NOT null");
                 if (audioSource != null)
                 {
-                    Debug.Log("KillerWallAudio::OnTriggerEnter: audioSource was NOT null");
+                    // Debug.Log("KillerWallAudio::OnTriggerEnter: audioSource was NOT null");
                     audioSource.volume = soundVolume;
                     audioSource.PlayOneShot(killerWallSound);
                 }
                 else
                 {
-                    Debug.Log("KillerWallAudio::OnTriggerEnter: audioSource was null - adding AudioSource component and playing sound");
+                    // Debug.Log("KillerWallAudio::OnTriggerEnter: audioSource was null - adding AudioSource component and playing sound");
                     // Dynamically add - there were issues where audio played non-stop when I added AudioSource for 
                     // component to each knife blade. Also had "Ran out of Virtual Channel error. (this was for C:\Users\derek\python3scripts\omscs\vgd_cs6457\milestones\NPC-Revolution-Team-Project\Assets\Scripts\KnifeTrigger.cs )                  
                     audioSource = gameObject.AddComponent<AudioSource>();
@@ -48,7 +48,7 @@ public class KillerWallAudio : MonoBehaviour
             }
             else
             {
-                Debug.Log("KillerWallAudio::OnTriggerEnter: killerWallSound was null - no audio played.");
+                // Debug.Log("KillerWallAudio::OnTriggerEnter: killerWallSound was null - no audio played.");
             }
         }
     }

@@ -12,7 +12,7 @@ public class KnifeTrigger : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null) 
         {
-            Debug.Log("KnifeTrigger::OnTriggerEnter: No AudioSource component found. Dynamically adding after collision.");
+            // Debug.Log("KnifeTrigger::OnTriggerEnter: No AudioSource component found. Dynamically adding after collision.");
         }
     }
 
@@ -28,15 +28,15 @@ public class KnifeTrigger : MonoBehaviour
         {
             if (knifeSound != null)
             {
-                Debug.Log("KnifeTrigger::OnTriggerEnter: knifeSound was NOT null");
+                // Debug.Log("KnifeTrigger::OnTriggerEnter: knifeSound was NOT null");
                 if (audioSource != null)
                 {
-                    Debug.Log("KnifeTrigger::OnTriggerEnter: audioSource was NOT null");
+                    // Debug.Log("KnifeTrigger::OnTriggerEnter: audioSource was NOT null");
                     audioSource.PlayOneShot(knifeSound);
                 }
                 else
                 {
-                    Debug.Log("KnifeTrigger::OnTriggerEnter: audioSource was null - adding AudioSource component and playing sound");
+                    // Debug.Log("KnifeTrigger::OnTriggerEnter: audioSource was null - adding AudioSource component and playing sound");
                     // Dynamically add - there were issues where audio played non-stop when I added AudioSource
                     // component to each knife blade. Also had "Ran out of Virtual Channel error.
                     audioSource = gameObject.AddComponent<AudioSource>();
@@ -46,10 +46,10 @@ public class KnifeTrigger : MonoBehaviour
             }
             else
             {
-                Debug.Log("KnifeTrigger::OnTriggerEnter: knifeSound was null - no audio played.");
+                // Debug.Log("KnifeTrigger::OnTriggerEnter: knifeSound was null - no audio played.");
             }
-            Debug.Log("KnifeTrigger::OnTriggerEnter: Struck by knife on killer wall. gg no re.");
-            Time.timeScale = 0f;
+            // Debug.Log("KnifeTrigger::OnTriggerEnter: Struck by knife on killer wall. gg no re.");
+            // Time.timeScale = 0f;
         }
     }
 }
