@@ -86,8 +86,12 @@ public class MovementStateController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(spherePosition, controllerVar.radius - 0.05f);
-    }
+        if (controllerVar != null) {
+            Gizmos.DrawWireSphere(spherePosition, controllerVar.radius - 0.05f);
+        }
+        
+      }
+    
 
     public void JumpForce()
     {
