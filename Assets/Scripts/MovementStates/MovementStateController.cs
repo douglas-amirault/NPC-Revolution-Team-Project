@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MovementStateController : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class MovementStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // need to add to avoid interfering with the UI
+        // Prevent movement if UI is active
+        //if (EventSystem.current.IsPointerOverGameObject()) return;
+
         GetDirectionAndMove();
         Gravity();
 

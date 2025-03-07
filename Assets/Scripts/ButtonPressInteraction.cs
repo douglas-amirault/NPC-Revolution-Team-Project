@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class ButtonPressInteraction : MonoBehaviour
 {
@@ -33,6 +34,9 @@ public class ButtonPressInteraction : MonoBehaviour
 
     void Update()
     {
+        // Prevent interaction if clicking UI
+        //if (EventSystem.current.IsPointerOverGameObject()) return;
+
         float distanceToButton = Vector3.Distance(transform.position, buttonTop.transform.position);
 
         if (distanceToButton < interactionDistance && Input.GetKeyDown(KeyCode.F))
