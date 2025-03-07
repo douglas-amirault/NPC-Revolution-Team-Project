@@ -389,6 +389,18 @@ PrefabInstance:
       objectReference: {fileID: 254272178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30d81e6e3bebe4901b23c110d7195573, type: 3}
+--- !u!4 &277414804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 635968387230822270, guid: 30d81e6e3bebe4901b23c110d7195573,
+    type: 3}
+  m_PrefabInstance: {fileID: 277414803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &277414805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 635968386790471297, guid: 30d81e6e3bebe4901b23c110d7195573,
+    type: 3}
+  m_PrefabInstance: {fileID: 277414803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &543645275
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +536,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543645275}
   m_CullTransparentMesh: 1
+--- !u!1001 &564360903
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8356893042513964853, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 277414805}
+    - target: {fileID: 8356893042513964853, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 277414805}
+    - target: {fileID: 8356893043735918191, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: cameraPosition
+      value: 
+      objectReference: {fileID: 277414804}
+    - target: {fileID: 8356893044461478606, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_Name
+      value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356893044461478607, guid: 7388d9873e567e140bb3dea1574ec322,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7388d9873e567e140bb3dea1574ec322, type: 3}
 --- !u!1 &947479411
 GameObject:
   m_ObjectHideFlags: 0
