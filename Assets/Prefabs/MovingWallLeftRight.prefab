@@ -1183,6 +1183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killerWallSound: {fileID: 8300000, guid: 6e878c38208699141988bd75a8bb984f, type: 3}
+  soundVolume: 0.1
 --- !u!1 &5505695498401379128
 GameObject:
   m_ObjectHideFlags: 0
