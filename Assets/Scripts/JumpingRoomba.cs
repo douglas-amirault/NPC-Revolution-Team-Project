@@ -37,7 +37,7 @@ public class JumpingRoomba : Roomba
 
     public override void TurnRoombaOff()
     {
-        Debug.Log("Roomba jumping turned off");
+        // Debug.Log("Roomba jumping turned off");
         roombaState = RoombaState.PowerOff;
         navMeshAgent.isStopped = true;
         rbody.freezeRotation = true;
@@ -48,7 +48,7 @@ public class JumpingRoomba : Roomba
     // player in range to be chased by roomba
     public override void ChasePlayer()
     {
-        Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
+        // Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
         //navMeshAgent.SetDestination(player.position);
         roombaState = RoombaState.ChasePlayer;
 
@@ -57,7 +57,7 @@ public class JumpingRoomba : Roomba
 
     public override void OffChasePlayer()
     {
-        Debug.Log("MUST HAVE BEEN THE WIND");
+        // Debug.Log("MUST HAVE BEEN THE WIND");
         //navMeshAgent.SetDestination(rbody.position);
         navMeshAgent.ResetPath();
         roombaState = RoombaState.Idle;

@@ -26,7 +26,7 @@ public class FileCabinetMover : MonoBehaviour
         // Stop the cabinet if the player is within stopDistance
         if (distance <= stopDistance)
         {
-            Debug.Log("Stopping Cabinet - Player is Close!");
+            // Debug.Log("Stopping Cabinet - Player is Close!");
             moveSpeed = Mathf.Lerp(moveSpeed, 0, Time.deltaTime * 3); // Smoothly slow down
             return;
         }
