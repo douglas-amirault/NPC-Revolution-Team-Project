@@ -62,23 +62,23 @@ public class MovementStateController : MonoBehaviour
         controllerVar.Move(direction * movementSpeed * Time.deltaTime);
     }
 
-    public bool IsGrounded()
+    /*public bool IsGrounded()
     {
         spherePosition = new Vector3(transform.position.x, transform.position.y, transform.position.y);
         if (Physics.CheckSphere(spherePosition, controllerVar.radius - 0.05f)) return true;
         return false;
-    }
+    }*/
 
     void Gravity()
     {
-        if (!IsGrounded())
+        if (/*!IsGrounded()*/true)
         {
             velocityValue.y += gravityValue * Time.deltaTime;
         }
-        else if (velocityValue.y < 0)
+        /*else if (velocityValue.y < 0)
         {
             velocityValue.y = -2;
-        }
+        }*/
 
         controllerVar.Move(velocityValue * Time.deltaTime);
     }
