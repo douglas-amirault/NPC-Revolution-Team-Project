@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 4052042324839334114}
   m_Layer: 0
   m_Name: Drawer2
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 4052042325159146124}
   m_Layer: 0
   m_Name: FileCabinet
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f75d90624bdf9d4ab59446d89b33a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 10
   leftLimit: -5
   rightLimit: 5
   player: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 4052042325263504574}
   m_Layer: 0
   m_Name: Drawer1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 4052042325458713741}
   m_Layer: 0
   m_Name: Drawer3
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 4052042326008647835}
   m_Layer: 0
   m_Name: Drawer4
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
