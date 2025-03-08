@@ -112,14 +112,6 @@ public class Roomba : MonoBehaviour
 
     private void OnTriggerEnter(Collider c)
     {
-        // lose game if player contacts roomba
-        /*if (c.gameObject.CompareTag("Player"))
-        {
-            Time.timeScale = 0f;
-            Debug.Log("Game Over");
-        }*/
-
-
     }
 
     public bool IsPowerOn()
@@ -146,6 +138,7 @@ public class Roomba : MonoBehaviour
         navMeshAgent.SetDestination( rbody.position );
         roombaState = RoombaState.PlayerInSights;
         rbody.freezeRotation = true;
+        Debug.Log("Player in sights");
 
         anim.SetBool("Alert", true);
     }
@@ -164,6 +157,8 @@ public class Roomba : MonoBehaviour
         // Debug.Log("Roomba detected IS RUNNINGG AFTER YOU!");
         navMeshAgent.SetDestination(player.position);
         roombaState = RoombaState.ChasePlayer;
+
+        Debug.Log("Chasing Player");
 
         anim.SetBool("Chasing", true);
     }

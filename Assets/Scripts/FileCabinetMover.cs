@@ -3,12 +3,18 @@ using UnityEngine;
 public class FileCabinetMover : MonoBehaviour
 {
     public float moveSpeed = 3f;
+    private float currentMoveSpeed;
     public float leftLimit = -4f;
     public float rightLimit = 4f;
     public Transform player; // Assign player in the Inspector
     public float stopDistance = 10f; // Distance at which the cabinet stops moving
 
     private bool movingRight = true;
+
+    private void Start()
+    {
+        currentMoveSpeed = moveSpeed;
+    }
 
     void Update()
     {
@@ -27,27 +33,27 @@ public class FileCabinetMover : MonoBehaviour
         if (distance <= stopDistance)
         {
             // Debug.Log("Stopping Cabinet - Player is Close!");
-            moveSpeed = Mathf.Lerp(moveSpeed, 0, Time.deltaTime * 3); // Smoothly slow down
+            currentMoveSpeed = Mathf.Lerp(currentMoveSpeed, 0, Time.deltaTime * 3); // Smoothly slow down
             return;
         }
         else
         {
-            moveSpeed = 3; // Reset speed when player is far
+            currentMoveSpeed = moveSpeed; // Reset speed when player is far
         }
 
         // Move the cabinet left and right
         if (movingRight)
         {
-            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-            if (transform.position.x >= rightLimit)
+            transform.Translate(Vector3.right * currentMoveSpeed * Time.deltaTime);
+            if (transform.localPosition.x >= rightLimit)
             {
                 movingRight = false;
             }
         }
         else
         {
-            transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
-            if (transform.position.x <= leftLimit)
+            transform.Translate(Vector3.left * currentMoveSpeed * Time.deltaTime);
+            if (transform.localPosition.x <= leftLimit)
             {
                 movingRight = true;
             }
