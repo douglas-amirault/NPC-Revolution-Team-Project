@@ -70,6 +70,13 @@ These use rigidbody instead of navmesh, and when in range, they will charge up (
 And once charged up, they will zoom towards wherever they are facing until they hit a wall. High-speed roomba roomba flying towards you, fun.
 If you make it past those, you reach the door. Congradulations! 
 
+**Level 3**
+This level seems trivially easy at first, with the door and button being in sight at the start of the level and no roombas to be found.
+However, upon trying to reach the door, the player discovers that it is blocked by glass and they cannot reach it. Upon looking around
+the level, they discover an elevator that takes them up to another, smaller level. The first part of this level is a maze with roombas
+lurking around. The second part is a minefield of roombas, and the last part is also a minefield, but with the roombas being the charging
+type and them also being located between 4 mirrors. Upon clearing these obstacles, the player falls down a glass chute into the level
+finish are that they could not reach at the start.
 
 Known Bugs: 
 
