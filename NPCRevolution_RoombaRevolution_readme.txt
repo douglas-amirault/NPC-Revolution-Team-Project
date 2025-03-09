@@ -5,6 +5,57 @@ How to Play:
 Navigate your way to the exit door 
 Use the arrow/wasd keys to move. Use the space key to jump. 
 
+**Level 1**
+As in other levels, the overarching goal is to navigate past enemy AIs (the Roombas)
+and obstacles (including the killer wall prefabs). 
+
+
+When the game starts the game object Roomba (green top AI) and ChasingRoomba (red top AI)
+are facing the player. Note that the Roomba game objects are nav mesh agents that use 
+waypoints to patrol and break their patrol when Player is within a certain distance. 
+Prior to breaking patrol an animation is shown where the Roomba appears to be aggravated;
+if the Player gets closer it will attack. The ChasingRoomba game objects dart at the player
+when Player is in range via an is trigger collider. 
+
+
+A game dynamic to note is that the Player can jump on and deactivate the Roomba 
+game object.
+
+
+A major obstacle in this level is the killer wall prefab. It has an is trigger 
+collider on it that plays a mechanical wall sound when triggered by Player.
+The AudioSource component is added dynamically via Assets\Scripts\KillerWallAudio.cs
+to reduce computational complexity. Each wall prefab includes a child knife game 
+object that is comprised of a handle and blade made from primitive Unity objects.
+The blade has a script attached: Assets\Scripts\KnifeTrigger.cs. This script 
+dynamically adds the AudioSource component (to save resources since there are
+many walls on this level). The script also ends the game if Player collides 
+with its is Trigger collider. (A separate collider is used to ensure objects
+do not pass through the wall). The wall has a rigid body with is kinematic set 
+to true to support the animation that moves it. 
+
+
+In terms of design, the right side of the map appears to offer the best path to 
+the door that wins the level. However, there are numerous enemy AI on that path.
+Moreover, the user can see the door object through a glass wall. This glass wall
+blocks the door and tempts the player to go right on the more dangerous path.
+If the player moves that way and enters the glass wall corridor, they are met 
+with numerous patrolling Roombas. An alternative path is to use the moving 
+cabinets to the left of the glass wall.
+
+
+These cabinets are generally an obstacle, but in this level they are meant to be
+leveraged by the player. They move left and right via Assets\Scripts\FileCabinetMover.cs.
+The player should notice when one of them is more to the right so they can jump
+on the cabinet and then jump over the glass wall. 
+
+Once over the glass wall, the player presses "f" at the button next to the door.
+It opens and they win the level. The button script is here: Assets\Scripts\ButtonPressInteraction.cs.
+That script also ensures seamless transitions from one level to the next. 
+
+
+
+
 Known Bugs: 
 
 
@@ -47,8 +98,21 @@ Assets/Blink/Art/Animations/Animations_Starter_Pack:
 
 - Derek Griffing
 
-Handled audio. 
-He also designed layout of the level1.unity scene.
+Derek created the "killer wall" prefab MovingWallLeftRight from primitive Unity game objects.
+This included setting up dynamic instantiation of an AudioSource object to a play a mechanical 
+wall sound when the player is near, and adding a script to the blade on each wall's knife that
+ends the game and plays a stabbing sound. It also involved developing the moving wall animation
+and setting it up in Animator. He identified the external audio files and edited them.
+He also designed and implemented the level1.unity scene.
+
+**Scripts**
+ - Wrote: Assets\Scripts\KnifeTrigger.cs, Assets\Scripts\KnifeTrigger.cs
+ - Added audio handling to Assets\Scripts\ProximityActivator.cs, 
+   Assets\Scripts\ButtonPressInteraction.cs (level end)
+ - Edited Assets\Scripts\Roomba.cs to handle patrolling issues
+ - Edited Assets\Scripts\ChasingRoomba.cs to speed charging and attack, and ensure
+   Roomba AI enemies target player.
+
 
 External assets: 
 
