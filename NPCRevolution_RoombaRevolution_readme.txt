@@ -92,7 +92,17 @@ Assets/Audio/Music/Tristan_Nolan/Nox - Dark & Futuristic Music Pack
 
 - Pedro Garboza-Hong
 
-Pedro implemented the player movement and camera controls. This includes all scripts in Assets/Scripts/MovementStates
+Implemented the player movement and camera controls. This includes all scripts in Assets/Scripts/MovementStates.
+
+Assigned prefabs and objects to scripts to ensure the collision and triggering of events accordigly.
+
+Implemented CinemaMachine plugin following online tutorial for as a means of learning aid.
+
+Verified Cinemachine implementation by referencing official documentation https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html
+
+Integrated GameOverMenu and WinMenu changes
+
+Assited team members.
 
 External Resources:
 
