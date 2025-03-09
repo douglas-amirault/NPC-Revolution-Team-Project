@@ -22,7 +22,7 @@ A game dynamic to note is that the Player can jump on and deactivate the Roomba
 game object.
 
 
-A major obstacle in this level is the killer wall prefab. It has an is trigger 
+A major obstacle in this level is the killer wall prefab. It has a trigger 
 collider on it that plays a mechanical wall sound when triggered by Player.
 The AudioSource component is added dynamically via Assets\Scripts\KillerWallAudio.cs
 to reduce computational complexity. Each wall prefab includes a child knife game 
@@ -63,9 +63,14 @@ Team Contributions:
 
 - Douglas Amirault
 
-He also designed layout of the level3.unity scene.
+Douglas created the team's Git repository and the level prefabs (four walls, floor, final door and buttons, with open
+and pressing animations with an f key press, respectively) for small and large levels. He also wrote the script to
+handle level transitions (Assets/Scripts/ButtonPressInteraction.cs), as well as selecting and adding three
+different audio files from the asset store to play in each of the three levels we have implemented. Finally, he
+designed and implemented the Level 3.unity scene.
 
-External Resources:
+
+External Assets:
 
 Assets/Audio/Music/Tristan_Nolan/Nox - Dark & Futuristic Music Pack
     • https://assetstore.unity.com/packages/audio/music/electronic/nox-dark-futuristic-music-pack-241162
