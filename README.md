@@ -18,7 +18,6 @@
 
 
 ##### Sources
-- Pedro
   1. Third Person Shooter (Unity Tutorial) Ep 1 Movement and Camera https://www.youtube.com/watch?v=KCYr5pFC6Sw&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx
 
   2. Third Person Shooter (Unity Tutorial) Ep 2 Animation Blend Trees https://www.youtube.com/watch?v=IhEgT4yMLMA&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx&index=4
