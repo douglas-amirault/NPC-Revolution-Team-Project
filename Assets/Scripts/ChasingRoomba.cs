@@ -9,10 +9,6 @@ using UnityEngine.AI;
 // subset of roomba: won't give warning but no waypoints and has extra detection for 
 public class ChasingRoomba : Roomba
 {
-    // The Roombas were charging too slow when relying on animation to update
-    // clip name; added these var to speed charging
-    private float chargeDelay = 0.2f;
-    private float chargeTimer = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,37 +36,18 @@ public class ChasingRoomba : Roomba
                         Time.deltaTime * 2);
 
                 // identify when roomba is ready by if it got past pre-charge animation
-                // string clipName = anim.GetCurrentAnimatorClipInfo(0)[0].clip.ToString();
-                // if( clipName.StartsWith("ChasingRoombaRun"))
-                // {
-                //     roombaState = RoombaState.Charge;
-                // }
-                // DG: relying on the animator to change clip name may have led
-                // to slow charging - change below is consistent with lectures
-                // where we use delta time to make things independent of frame
-                // rate. This seems to speed charging and improve gameplay.
-                chargeTimer += Time.deltaTime;
-                if (chargeTimer >= chargeDelay)
+                // F.M.G: yes, it is supposed to have slow charging to give roomba ample time to turn to player
+                //     and let the charging animation play out
+                //     if you want to tune the charging speed, please adjust the animation controller
+                string clipName = anim.GetCurrentAnimatorClipInfo(0)[0].clip.ToString();
+                if (clipName.StartsWith("ChasingRoombaRun"))
                 {
                     roombaState = RoombaState.Charge;
-                    chargeTimer = 0f;
                 }
             }
         }
         else if (roombaState == RoombaState.Charge)
         {
-            // DG: Added this because without it the Roomba locked its rotation
-            // on player and missed. Here we continue to update rotation.
-            if (player != null)
-            {
-                // DG: Set y to 0 bc Roomba has taken off for flight
-                Vector3 direction = player.position - transform.position;
-                // direction.y = 0;
-
-                transform.rotation = Quaternion.LerpUnclamped(transform.rotation,
-                    Quaternion.LookRotation(direction, Vector3.up),
-                    Time.deltaTime * 2);
-            }
             rbody.AddForce( transform.forward * roombaSpeed, ForceMode.Impulse);
         }
     }

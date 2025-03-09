@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class IdleState : MovementStateBase
 {
@@ -8,6 +9,9 @@ public class IdleState : MovementStateBase
 
     public override void UpdateState(MovementStateController movement)
     {
+        // Prevents player input if clicking UI
+       // if (EventSystem.current.IsPointerOverGameObject()) return;
+
         if (movement.direction.magnitude > 0.1f)
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || 

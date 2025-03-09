@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MovementStateController : MonoBehaviour
 {
@@ -8,6 +10,7 @@ public class MovementStateController : MonoBehaviour
     public IdleState IdleState = new IdleState();
     public RunState RunState = new RunState();
     public JumpState JumpState = new JumpState();
+    public GameObject gameOverScreen;
 
     // Animator
     [HideInInspector] public Animator animator;
@@ -32,11 +35,17 @@ public class MovementStateController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         controllerVar = GetComponent<CharacterController>();
         ChangeState(IdleState);
+        gameOverScreen.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        // need to add to avoid interfering with the UI
+        // Prevent movement if UI is active
+        //if (EventSystem.current.IsPointerOverGameObject()) return;
+
         GetDirectionAndMove();
         Gravity();
 
@@ -103,12 +112,23 @@ public class MovementStateController : MonoBehaviour
 
     private void OnCollisionEnter(Collision c)
     {
+        
+        if (c.transform.gameObject.tag == "Knife")
+        {
+            //Time.timeScale = 0f;
+            
+            //gameOverScreen.SetActive(true);
+
+        }
+
         // TODO: end game stuff here!!!!
         // game over on bad touch obstacles
         if (c.transform.gameObject.tag == "Obstacle")
         {
             Time.timeScale = 0f;
             Debug.Log("Game Over");
+            gameOverScreen.SetActive(true);
+
         }
 
         // shut off roomba instead of vice versa
@@ -120,6 +140,7 @@ public class MovementStateController : MonoBehaviour
             {
                 Time.timeScale = 0f;
                 Debug.Log("Game Over");
+                gameOverScreen.SetActive(true);
             }
 
         }
