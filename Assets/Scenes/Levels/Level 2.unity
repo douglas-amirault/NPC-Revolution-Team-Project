@@ -3435,6 +3435,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1788608690}
     m_Modifications:
+    - target: {fileID: 5505695497811348086, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695497828461862, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695497931360977, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695498108301407, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695498208705673, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
     - target: {fileID: 5505695498354687242, guid: ff2484a79654741c09b71071fd01fbdd,
         type: 3}
       propertyPath: m_RootOrder
@@ -3510,6 +3535,61 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingWallLeftRight 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5505695498456409090, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695498901000423, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499122518514, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499148607288, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499174947266, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499397075717, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499573367522, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499649982733, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499720903616, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499735451787, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499854857034, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2484a79654741c09b71071fd01fbdd, type: 3}
 --- !u!1001 &1502402634
@@ -3615,6 +3695,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 931013225}
     m_Modifications:
+    - target: {fileID: 5505695497811348086, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695497828461862, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695497931360977, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695498108301407, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695498208705673, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
     - target: {fileID: 5505695498354687242, guid: ff2484a79654741c09b71071fd01fbdd,
         type: 3}
       propertyPath: m_RootOrder
@@ -3690,6 +3795,61 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingWallLeftRight 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5505695498456409090, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695498901000423, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499122518514, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499148607288, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499174947266, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499397075717, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499573367522, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499649982733, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499720903616, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499735451787, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
+    - target: {fileID: 5505695499854857034, guid: ff2484a79654741c09b71071fd01fbdd,
+        type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 2019859304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff2484a79654741c09b71071fd01fbdd, type: 3}
 --- !u!1001 &1530247901
