@@ -48,8 +48,8 @@ public class KnifeTrigger : MonoBehaviour
             {
                 // Debug.Log("KnifeTrigger::OnTriggerEnter: knifeSound was null - no audio played.");
             }
-            // Debug.Log("KnifeTrigger::OnTriggerEnter: Struck by knife on killer wall. gg no re.");
-            // Time.timeScale = 0f;
+            Debug.Log("KnifeTrigger::OnTriggerEnter: Struck by knife on killer wall. gg no re.");
+            Time.timeScale = 0f;
         }
     }
 }

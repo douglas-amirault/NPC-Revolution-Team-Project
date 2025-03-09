@@ -1135,7 +1135,7 @@ GameObject:
   - component: {fileID: -2202101348004973171}
   - component: {fileID: -6951739823971786863}
   m_Layer: 0
-  m_Name: MovingWallLeftRight
+  m_Name: MovingWallLeftRight 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1168,8 +1168,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 10, z: 100}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 70, y: 20, z: 12}
+  m_Center: {x: 0, y: -3, z: 0}
 --- !u!114 &-6951739823971786863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,7 +1183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killerWallSound: {fileID: 8300000, guid: 6e878c38208699141988bd75a8bb984f, type: 3}
-  soundVolume: 0.1
+  soundVolume: 0.5
 --- !u!1 &5505695498401379128
 GameObject:
   m_ObjectHideFlags: 0
