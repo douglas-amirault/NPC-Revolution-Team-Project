@@ -17,6 +17,8 @@ public class ButtonPressInteraction : MonoBehaviour
     private Renderer buttonRenderer;
 
     public TextMeshProUGUI winText;
+    private AudioSource audioSource;
+    public AudioClip doorLevelSound;
 
     void Start()
     {
@@ -46,17 +48,20 @@ public class ButtonPressInteraction : MonoBehaviour
             buttonRenderer.material = glowingGreenMaterial;
 
             string currentSceneName = SceneManager.GetActiveScene().name;
-
+            audioSource = gameObject.AddComponent<AudioSource>();
             if (currentSceneName == "Level 1")
             {
+                audioSource.PlayOneShot(doorLevelSound);
                 StartCoroutine(LoadLevelWithDelay("Level 2", 1.5f));
             }
             else if (currentSceneName == "Level 2")
             {
+                audioSource.PlayOneShot(doorLevelSound);
                 StartCoroutine(LoadLevelWithDelay("Level 3", 1.5f));
             }
             else if (currentSceneName == "Level 3")
             {
+                audioSource.PlayOneShot(doorLevelSound);
                 winText.gameObject.SetActive(true);
                 winText.text = "You Win!";
             }
