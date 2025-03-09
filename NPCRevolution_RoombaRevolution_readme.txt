@@ -6,7 +6,25 @@ Navigate your way to the exit door
 Use the arrow/wasd keys to move. Use the space key to jump. 
 Use the Esc for In-Game Menu
 
+
 **Level 1**
+The goal of this level is interacting with various roomba types along with minor obstacles. 
+Past the killer wall you will see one standard roomba. It goes into warning mode when the player nears
+where it will track player movement, then charge after the player if the player gets any closer. 
+Jumping on its power button will turn it off.
+
+Past the standard roomba is a series of shelves where the Jumping Roombas reside. 
+These roombas can navigate jumpable surfaces...such as surprising the player by falling from above. 
+
+Past that is a series of hallways with moving cabinets. They move between a specific coordinate range and each speed is different. 
+
+After another killer wall is a section of standard roombas, and past that are the chasing roombas. 
+These use rigidbody instead of navmesh, and when in range, they will charge up (as indicated by the change in eye color resembling a traffic light)
+And once charged up, they will zoom towards wherever they are facing until they hit a wall. High-speed roomba roomba flying towards you, fun.
+If you make it past those, you reach the door. Congratulations! 
+
+
+**Level 2**
 As in other levels, the overarching goal is to navigate past enemy AIs (the Roombas)
 and obstacles (including the killer wall prefabs). 
 
@@ -54,21 +72,6 @@ Once over the glass wall, the player presses "f" at the button next to the door.
 It opens and they win the level. The button script is here: Assets\Scripts\ButtonPressInteraction.cs.
 That script also ensures seamless transitions from one level to the next. 
 
-**Level 2**
-The goal of this level is interacting with various roomba types along with minor obstacles. 
-Past the killer wall you will see one standard roomba. It goes into warning mode when the player nears
-where it will track player movement, then charge after the player if the player gets any closer. 
-Jumping on its power button will turn it off.
-
-Past the standard roomba is a series of shelves where the Jumping Roombas reside. 
-These roombas can navigate jumpable surfaces...such as surprising the player by falling from above. 
-
-Past that is a series of hallways with moving cabinets. They move between a specific coordinate range and each speed is different. 
-
-After another killer wall is a section of standard roombas, and past that are the chasing roombas. 
-These use rigidbody instead of navmesh, and when in range, they will charge up (as indicated by the change in eye color resembling a traffic light)
-And once charged up, they will zoom towards wherever they are facing until they hit a wall. High-speed roomba roomba flying towards you, fun.
-If you make it past those, you reach the door. Congratulations! 
 
 **Level 3**
 This level seems trivially easy at first, with the door and button being in sight at the start of the level and no roombas to be found.
@@ -140,7 +143,7 @@ This included setting up dynamic instantiation of an AudioSource object to a pla
 wall sound when the player is near, and adding a script to the blade on each wall's knife that
 ends the game and plays a stabbing sound. It also involved developing the moving wall animation
 and setting it up in Animator. He identified the external audio files and edited them.
-He also designed and implemented the level1.unity scene.
+He also designed and implemented the level2.unity scene.
 
 **Scripts**
  - Wrote: Assets\Scripts\KnifeTrigger.cs, Assets\Scripts\KillerWallAudio.cs
@@ -169,7 +172,7 @@ Assets/External/SciFiOfficeLite
 
 Faith designed and implemented the roombas enemies. This includes putting together the model from Unity primitive objects, 
 the ChasingRoomba.cs, JumpingRoomba.cs, and Roomba.cs scripts, creating custom animations in Animations/EnemyAnimations, 
-and combining these elements to make the three roomba prefabs objects in Prefabs. She also designed layout of the level2.unity scene.
+and combining these elements to make the three roomba prefabs objects in Prefabs. She also designed layout of the level1.unity scene.
 Additional supplemental assets created included Prefab/ClimbableWall.prefab and Prefab/waypoint.prefab. 
 Also did a little debugging for Assets/Scripts/FileCabinetMover.cs
 
