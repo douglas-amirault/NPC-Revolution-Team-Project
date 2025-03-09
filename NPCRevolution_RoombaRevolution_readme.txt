@@ -111,7 +111,7 @@ and setting it up in Animator. He identified the external audio files and edited
 He also designed and implemented the level1.unity scene.
 
 **Scripts**
- - Wrote: Assets\Scripts\KnifeTrigger.cs, Assets\Scripts\KnifeTrigger.cs
+ - Wrote: Assets\Scripts\KnifeTrigger.cs, Assets\Scripts\KillerWallAudio.cs
  - Added audio handling to Assets\Scripts\ProximityActivator.cs, 
    Assets\Scripts\ButtonPressInteraction.cs (level end)
  - Edited Assets\Scripts\Roomba.cs to handle patrolling issues
