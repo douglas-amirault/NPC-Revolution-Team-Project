@@ -137,9 +137,12 @@ Additional supplental assets created included Prefab/ClimbableWall.prefab and Pr
 
 No external assets were used.
 
-- Fanny Martinez
+Fanny Martinez Contributions
 
-Fanny designed and implemented the Assets/FileCabinet prefab object, along with the associated Assets/Scripts/FielCabinetMover.cs script. She also worked on menu. 
-
-External assets: 
+-Designed and implemented the brown file cabinet prefab (Assets/Prefab/FileCabinet)
+  **Developed the associated script: Assets/Scripts/FileCabinetMover.cs
+-Designed and implemented the Start Menu
+  **Created the related scripts: Assets/Scripts/Menu.cs and Assets/Scripts/GameQuitter.cs
+-Designed and implemented the In-Game to Level 1 transition system
+  **Developed the associated script: Assets/Scripts/InGameMenu.cs
 
