@@ -54,7 +54,21 @@ Once over the glass wall, the player presses "f" at the button next to the door.
 It opens and they win the level. The button script is here: Assets\Scripts\ButtonPressInteraction.cs.
 That script also ensures seamless transitions from one level to the next. 
 
+**Level 2**
+The goal of this level is interacting with various roomba types along with minor obstacles. 
+Past the killer wall you will see one standard roomba. It goes into warning mode when the player nears
+where it will track player movement, then charge after the player if the player gets any closer. 
+Jumping on its power button will turn it off.
 
+Past the standard roomba is a series of shelves where the Jumping Roombas reside. 
+These roombas can navigate jumpable surfaces...such as surprising the player by falling from above. 
+
+Past that is a series of hallways with moving cabinets. They move between an specific coordinate range and each speed is different. 
+
+After another killer wall is a section of standard roombas, and past that are the chasing roombas. 
+These use rigidbody instead of navmesh, and when in range, they will charge up (as indicated by the change in eye color resembling a traffic light)
+And once charged up, they will zoom towards wherever they are facing until they hit a wall. High-speed roomba roomba flying towards you, fun.
+If you make it past those, you reach the door. Congradulations! 
 
 
 Known Bugs: 
@@ -140,6 +154,7 @@ Faith designed and implemented the roombas enemies. This includes putting togeth
 the ChasingRoomba.cs, JumpingRoomba.cs, and Roomba.cs scripts, creating custom animations in Animations/EnemyAnimations, 
 and combining these elements to make the three roomba prefabs objects in Prefabs. She also designed layout of the level2.unity scene.
 Additional supplental assets created included Prefab/ClimbableWall.prefab and Prefab/waypoint.prefab. 
+Also did a little debugging for Assets/Scripts/FileCabinetMover.cs
 
 No external assets were used.
 
