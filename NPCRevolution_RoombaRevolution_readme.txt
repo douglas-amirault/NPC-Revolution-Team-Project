@@ -4,6 +4,7 @@ How to Play:
 
 Navigate your way to the exit door 
 Use the arrow/wasd keys to move. Use the space key to jump. 
+Use the Esc for In-Game Menu
 
 **Level 1**
 As in other levels, the overarching goal is to navigate past enemy AIs (the Roombas)
@@ -144,10 +145,13 @@ No external assets were used.
 
 Fanny Martinez Contributions
 
--Designed and implemented the brown file cabinet prefab (Assets/Prefab/FileCabinet)
-  **Developed the associated script: Assets/Scripts/FileCabinetMover.cs
--Designed and implemented the Start Menu
-  **Created the related scripts: Assets/Scripts/Menu.cs and Assets/Scripts/GameQuitter.cs
--Designed and implemented the In-Game to Level 1 transition system
-  **Developed the associated script: Assets/Scripts/InGameMenu.cs
+• Designed and implemented the brown file cabinet prefab (Assets/Prefab/FileCabinet)
+   ** Developed the associated script: Assets/Scripts/FileCabinetMover.cs
+• Designed and implemented the Start Menu
+  ** Created the related scripts: Assets/Scripts/Menu.cs and Assets/Scripts/GameQuitter.cs
+• Designed and implemented the In-Game to Level 1 transition system
+  ** Developed the associated script: Assets/Scripts/InGameMenu.cs
+Black fillinf cabinet prefab (Assets/Prefabs/filling-cabintet)
+      Source: https://assetstore.unity.com/packages/3d/props/interior/old-office-props-free-53735
+  
 
