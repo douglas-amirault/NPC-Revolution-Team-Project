@@ -4,7 +4,7 @@
   2. roomba from prefab object
   3. swinging pendulum 
 
-#### Pedro
+### Pedro
 ##### Integrated GameOverMenu and WinMenu changes
  1. Assigned prefabs and objects to scripts to ensure the collision and triggering of events accordigly.
 
