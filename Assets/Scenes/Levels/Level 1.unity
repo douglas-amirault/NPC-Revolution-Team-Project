@@ -5906,7 +5906,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1452488778}
     - target: {fileID: 8829103968131518637, guid: ebf1403e8e1a04948913d948aaa66d11,
         type: 3}
       propertyPath: leftLimit
@@ -8928,7 +8928,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1452488778}
     - target: {fileID: 8829103968131518637, guid: ebf1403e8e1a04948913d948aaa66d11,
         type: 3}
       propertyPath: leftLimit
