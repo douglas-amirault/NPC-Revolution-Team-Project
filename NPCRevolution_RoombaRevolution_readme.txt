@@ -127,10 +127,10 @@ Third Person Shooter (Unity Tutorial) Ep 12 Jumping
 
 External Assets:
 
-Assets/Advaita Assets/Low Poly Prototype Character/*:
+Assets/External/Advaita Assets/Low Poly Prototype Character/*:
     • https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-prototype-character-294200?srsltid=AfmBOoovUH4d3n4OEeA63xlLxu5gFKKRAYNFACkGLPzCp8-asNbs4y76
 
-Assets/Blink/Art/Animations/Animations_Starter_Pack:
+Assets/External/Blink/Art/Animations/Animations_Starter_Pack:
     • https://assetstore.unity.com/packages/3d/animations/free-32-rpg-animations-215058
 
 - Derek Griffing
@@ -162,7 +162,7 @@ Audio/SFX/door_level_end_sound.mp3
 Audio/SFX/killer_wall_sound.mp3
     • https://pixabay.com/sound-effects/search/mechanical/
 
-Assets/SciFiOfficeLite
+Assets/External/SciFiOfficeLite
     • https://assetstore.unity.com/packages/3d/environments/sci-fi/free-sci-fi-office-pack-195067
 
 - Faith Madeoy Gault
@@ -183,7 +183,7 @@ Fanny Martinez Contributions
   ** Created the related scripts: Assets/Scripts/Menu.cs and Assets/Scripts/GameQuitter.cs
 • Designed and implemented the In-Game to Level 1 transition system
   ** Developed the associated script: Assets/Scripts/InGameMenu.cs
-Black fillinf cabinet prefab (Assets/Prefabs/filling-cabintet)
+Black fillinf cabinet prefab (Assets/Prefabs/filling-cabintet) (Assets/External/Old_Office_Props)
       Source: https://assetstore.unity.com/packages/3d/props/interior/old-office-props-free-53735
   
 
