@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 111367480}
   - component: {fileID: 111367479}
   - component: {fileID: 111367478}
+  - component: {fileID: 111367481}
   m_Layer: 0
   m_Name: Maze14
   m_TagString: Untagged
@@ -219,6 +220,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111367476}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &111367481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111367476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &119263521
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +351,7 @@ GameObject:
   - component: {fileID: 158478517}
   - component: {fileID: 158478516}
   - component: {fileID: 158478515}
+  - component: {fileID: 158478518}
   m_Layer: 0
   m_Name: Maze29
   m_TagString: Untagged
@@ -419,6 +437,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158478513}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &158478518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158478513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &200084261
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +465,7 @@ GameObject:
   - component: {fileID: 200084265}
   - component: {fileID: 200084264}
   - component: {fileID: 200084263}
+  - component: {fileID: 200084266}
   m_Layer: 0
   m_Name: Maze9
   m_TagString: Untagged
@@ -516,6 +551,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200084261}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &200084266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200084261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &216526651
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +796,7 @@ GameObject:
   - component: {fileID: 239913127}
   - component: {fileID: 239913126}
   - component: {fileID: 239913125}
+  - component: {fileID: 239913128}
   m_Layer: 0
   m_Name: Maze1
   m_TagString: Untagged
@@ -830,6 +882,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239913123}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &239913128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239913123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &254272176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1048,7 +1116,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (10)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -1127,7 +1195,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (22)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -1218,7 +1286,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (19)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -1297,7 +1365,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (21)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -1368,6 +1436,7 @@ GameObject:
   - component: {fileID: 399511595}
   - component: {fileID: 399511594}
   - component: {fileID: 399511593}
+  - component: {fileID: 399511596}
   m_Layer: 0
   m_Name: Maze22
   m_TagString: Untagged
@@ -1453,6 +1522,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399511591}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &399511596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399511591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &441483086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 635968386165995148, guid: 30d81e6e3bebe4901b23c110d7195573,
@@ -1553,7 +1638,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (2)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -1918,7 +2003,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (3)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -2148,6 +2233,7 @@ GameObject:
   - component: {fileID: 516098345}
   - component: {fileID: 516098344}
   - component: {fileID: 516098343}
+  - component: {fileID: 516098346}
   m_Layer: 0
   m_Name: Maze32
   m_TagString: Untagged
@@ -2233,6 +2319,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516098341}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &516098346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516098341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &517892099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,9 +2456,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526982682}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -10, z: -0.55357146}
+  m_LocalScale: {x: 0.0033333332, y: 1, z: 0.0071428576}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 239913124}
@@ -2391,8 +2493,8 @@ Transform:
   - {fileID: 1288051937}
   - {fileID: 1223036994}
   - {fileID: 516098342}
-  m_Father: {fileID: 8961912726016515250}
-  m_RootOrder: 7
+  m_Father: {fileID: 832164036}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &540798631
 PrefabInstance:
@@ -2414,7 +2516,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (5)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -2493,7 +2595,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (16)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -2854,6 +2956,7 @@ GameObject:
   - component: {fileID: 577832446}
   - component: {fileID: 577832445}
   - component: {fileID: 577832444}
+  - component: {fileID: 577832447}
   m_Layer: 0
   m_Name: Maze16
   m_TagString: Untagged
@@ -2939,6 +3042,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577832442}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &577832447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577832442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &583847841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3099,6 +3218,7 @@ GameObject:
   - component: {fileID: 627089453}
   - component: {fileID: 627089452}
   - component: {fileID: 627089451}
+  - component: {fileID: 627089454}
   m_Layer: 0
   m_Name: Maze15
   m_TagString: Untagged
@@ -3184,6 +3304,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627089449}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &627089454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627089449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &651248478 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
@@ -3202,6 +3338,7 @@ GameObject:
   - component: {fileID: 662964359}
   - component: {fileID: 662964358}
   - component: {fileID: 662964357}
+  - component: {fileID: 662964360}
   m_Layer: 0
   m_Name: Maze7
   m_TagString: Untagged
@@ -3287,6 +3424,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662964355}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &662964360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662964355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &664093220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,6 +3550,7 @@ GameObject:
   - component: {fileID: 672103073}
   - component: {fileID: 672103072}
   - component: {fileID: 672103071}
+  - component: {fileID: 672103074}
   m_Layer: 0
   m_Name: Maze23
   m_TagString: Untagged
@@ -3482,6 +3636,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672103069}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &672103074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672103069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &676752568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
@@ -3500,6 +3670,7 @@ GameObject:
   - component: {fileID: 724024133}
   - component: {fileID: 724024132}
   - component: {fileID: 724024131}
+  - component: {fileID: 724024134}
   m_Layer: 0
   m_Name: Maze20
   m_TagString: Untagged
@@ -3585,6 +3756,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724024129}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &724024134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724024129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &730360602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3982,7 +4169,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (9)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -4053,6 +4240,7 @@ GameObject:
   - component: {fileID: 808267906}
   - component: {fileID: 808267905}
   - component: {fileID: 808267904}
+  - component: {fileID: 808267907}
   m_Layer: 0
   m_Name: Maze5
   m_TagString: Untagged
@@ -4138,6 +4326,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808267902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &808267907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808267902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &819743255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4273,7 +4477,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 10, z: 77.5}
   m_LocalScale: {x: 300, y: 1, z: 140}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 526982683}
   m_Father: {fileID: 469291552}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4485,6 +4690,7 @@ GameObject:
   - component: {fileID: 874143119}
   - component: {fileID: 874143118}
   - component: {fileID: 874143117}
+  - component: {fileID: 874143120}
   m_Layer: 0
   m_Name: Maze17
   m_TagString: Untagged
@@ -4570,6 +4776,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874143115}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &874143120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874143115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &888649399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4590,7 +4812,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (11)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -4767,7 +4989,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (13)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -4846,7 +5068,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (14)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -5148,6 +5370,7 @@ GameObject:
   - component: {fileID: 990408408}
   - component: {fileID: 990408407}
   - component: {fileID: 990408406}
+  - component: {fileID: 990408409}
   m_Layer: 0
   m_Name: Maze24
   m_TagString: Untagged
@@ -5233,6 +5456,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990408404}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &990408409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990408404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1029242876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5523,7 +5762,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (12)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -5808,6 +6047,7 @@ GameObject:
   - component: {fileID: 1223036997}
   - component: {fileID: 1223036996}
   - component: {fileID: 1223036995}
+  - component: {fileID: 1223036998}
   m_Layer: 0
   m_Name: Maze31
   m_TagString: Untagged
@@ -5893,6 +6133,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223036993}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1223036998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223036993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1227557552
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,6 +6344,7 @@ GameObject:
   - component: {fileID: 1254564171}
   - component: {fileID: 1254564170}
   - component: {fileID: 1254564169}
+  - component: {fileID: 1254564172}
   m_Layer: 0
   m_Name: Maze12
   m_TagString: Untagged
@@ -6173,6 +6430,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254564167}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1254564172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254564167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1260428157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
@@ -6191,6 +6464,7 @@ GameObject:
   - component: {fileID: 1288051940}
   - component: {fileID: 1288051939}
   - component: {fileID: 1288051938}
+  - component: {fileID: 1288051941}
   m_Layer: 0
   m_Name: Maze30
   m_TagString: Untagged
@@ -6276,6 +6550,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288051936}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1288051941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288051936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1290431964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
@@ -6417,7 +6707,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (8)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -6488,6 +6778,7 @@ GameObject:
   - component: {fileID: 1362047457}
   - component: {fileID: 1362047456}
   - component: {fileID: 1362047455}
+  - component: {fileID: 1362047458}
   m_Layer: 0
   m_Name: Maze3
   m_TagString: Untagged
@@ -6573,6 +6864,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362047453}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1362047458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362047453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1400552727
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,6 +6892,7 @@ GameObject:
   - component: {fileID: 1400552731}
   - component: {fileID: 1400552730}
   - component: {fileID: 1400552729}
+  - component: {fileID: 1400552732}
   m_Layer: 0
   m_Name: Maze6
   m_TagString: Untagged
@@ -6670,6 +6978,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400552727}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1400552732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400552727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1403060527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6682,6 +7006,7 @@ GameObject:
   - component: {fileID: 1403060531}
   - component: {fileID: 1403060530}
   - component: {fileID: 1403060529}
+  - component: {fileID: 1403060532}
   m_Layer: 0
   m_Name: Maze21
   m_TagString: Untagged
@@ -6767,6 +7092,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403060527}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1403060532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403060527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1413971036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6888,6 +7229,7 @@ GameObject:
   - component: {fileID: 1449716615}
   - component: {fileID: 1449716614}
   - component: {fileID: 1449716613}
+  - component: {fileID: 1449716616}
   m_Layer: 0
   m_Name: Maze4
   m_TagString: Untagged
@@ -6973,6 +7315,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449716611}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1449716616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449716611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1453146020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6985,6 +7343,7 @@ GameObject:
   - component: {fileID: 1453146024}
   - component: {fileID: 1453146023}
   - component: {fileID: 1453146022}
+  - component: {fileID: 1453146025}
   m_Layer: 0
   m_Name: Maze26
   m_TagString: Untagged
@@ -7070,6 +7429,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453146020}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1453146025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453146020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1471921386
 GameObject:
   m_ObjectHideFlags: 0
@@ -7082,6 +7457,7 @@ GameObject:
   - component: {fileID: 1471921390}
   - component: {fileID: 1471921389}
   - component: {fileID: 1471921388}
+  - component: {fileID: 1471921391}
   m_Layer: 0
   m_Name: Maze2
   m_TagString: Untagged
@@ -7167,6 +7543,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471921386}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1471921391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471921386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1476626132
 GameObject:
   m_ObjectHideFlags: 0
@@ -7179,6 +7571,7 @@ GameObject:
   - component: {fileID: 1476626136}
   - component: {fileID: 1476626135}
   - component: {fileID: 1476626134}
+  - component: {fileID: 1476626137}
   m_Layer: 0
   m_Name: Maze25
   m_TagString: Untagged
@@ -7264,6 +7657,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476626132}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1476626137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476626132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1494764973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
@@ -7417,7 +7826,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (6)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -7790,6 +8199,7 @@ GameObject:
   - component: {fileID: 1614001778}
   - component: {fileID: 1614001777}
   - component: {fileID: 1614001776}
+  - component: {fileID: 1614001779}
   m_Layer: 0
   m_Name: Maze13
   m_TagString: Untagged
@@ -7875,6 +8285,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614001774}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1614001779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614001774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1630517270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
@@ -7901,7 +8327,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (4)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -7972,6 +8398,7 @@ GameObject:
   - component: {fileID: 1634751247}
   - component: {fileID: 1634751246}
   - component: {fileID: 1634751245}
+  - component: {fileID: 1634751248}
   m_Layer: 0
   m_Name: Maze28
   m_TagString: Untagged
@@ -8057,6 +8484,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634751243}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1634751248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634751243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &1678173169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
@@ -8204,7 +8647,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (15)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -8275,6 +8718,7 @@ GameObject:
   - component: {fileID: 1787208162}
   - component: {fileID: 1787208161}
   - component: {fileID: 1787208160}
+  - component: {fileID: 1787208163}
   m_Layer: 0
   m_Name: Maze11
   m_TagString: Untagged
@@ -8360,6 +8804,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787208158}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1787208163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787208158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1803236810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8422,7 +8882,7 @@ Transform:
   - {fileID: 934455823}
   - {fileID: 348941083}
   m_Father: {fileID: 8961912726016515250}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1806503067
 PrefabInstance:
@@ -8444,7 +8904,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (17)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -8620,7 +9080,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (20)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -8796,7 +9256,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (7)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -8867,6 +9327,7 @@ GameObject:
   - component: {fileID: 1877578020}
   - component: {fileID: 1877578019}
   - component: {fileID: 1877578018}
+  - component: {fileID: 1877578021}
   m_Layer: 0
   m_Name: Maze18
   m_TagString: Untagged
@@ -8952,6 +9413,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877578016}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1877578021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877578016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1902416872
 GameObject:
   m_ObjectHideFlags: 0
@@ -9067,6 +9544,7 @@ GameObject:
   - component: {fileID: 1980781395}
   - component: {fileID: 1980781394}
   - component: {fileID: 1980781393}
+  - component: {fileID: 1980781396}
   m_Layer: 0
   m_Name: Maze10
   m_TagString: Untagged
@@ -9152,6 +9630,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980781391}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1980781396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980781391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2002078760
 GameObject:
   m_ObjectHideFlags: 0
@@ -9341,6 +9835,7 @@ GameObject:
   - component: {fileID: 2016405294}
   - component: {fileID: 2016405293}
   - component: {fileID: 2016405292}
+  - component: {fileID: 2016405295}
   m_Layer: 0
   m_Name: Maze19
   m_TagString: Untagged
@@ -9426,6 +9921,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016405290}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2016405295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016405290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2018758150
 GameObject:
   m_ObjectHideFlags: 0
@@ -9438,6 +9949,7 @@ GameObject:
   - component: {fileID: 2018758154}
   - component: {fileID: 2018758153}
   - component: {fileID: 2018758152}
+  - component: {fileID: 2018758155}
   m_Layer: 0
   m_Name: Maze8
   m_TagString: Untagged
@@ -9523,6 +10035,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018758150}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2018758155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018758150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2068847862
 GameObject:
   m_ObjectHideFlags: 0
@@ -9640,7 +10168,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (18)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -9711,6 +10239,7 @@ GameObject:
   - component: {fileID: 2087579459}
   - component: {fileID: 2087579458}
   - component: {fileID: 2087579457}
+  - component: {fileID: 2087579460}
   m_Layer: 0
   m_Name: Maze27
   m_TagString: Untagged
@@ -9796,6 +10325,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087579455}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2087579460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087579455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 5, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2103299201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
@@ -9822,7 +10367,7 @@ PrefabInstance:
     - target: {fileID: 5770683478731376233, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: m_Name
-      value: Roomba (1)
+      value: Roomba
       objectReference: {fileID: 0}
     - target: {fileID: 8944827503531967264, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
@@ -10431,7 +10976,6 @@ Transform:
   - {fileID: 819743259}
   - {fileID: 517892103}
   - {fileID: 889432233}
-  - {fileID: 526982683}
   - {fileID: 1803236811}
   m_Father: {fileID: 0}
   m_RootOrder: 5
