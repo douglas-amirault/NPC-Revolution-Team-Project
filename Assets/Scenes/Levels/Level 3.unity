@@ -140,6 +140,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b027a5bf310befd45aa2f7063eb406fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &101097519 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 635968386165995148, guid: 30d81e6e3bebe4901b23c110d7195573,
+    type: 3}
+  m_PrefabInstance: {fileID: 962068449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &111367476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1179,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -1556,7 +1562,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -1683,7 +1689,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -1762,7 +1768,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -1960,7 +1966,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -2029,7 +2035,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -2210,7 +2216,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -2319,7 +2325,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -2394,7 +2400,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -2473,7 +2479,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -2557,7 +2563,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -2907,7 +2913,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -2986,7 +2992,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -3319,7 +3325,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -3393,7 +3399,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -4552,7 +4558,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -5207,7 +5213,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -5384,7 +5390,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -5469,7 +5475,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -5825,7 +5831,7 @@ PrefabInstance:
     - target: {fileID: 635968386165995148, guid: 30d81e6e3bebe4901b23c110d7195573,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 217.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 635968386165995148, guid: 30d81e6e3bebe4901b23c110d7195573,
         type: 3}
@@ -5835,7 +5841,7 @@ PrefabInstance:
     - target: {fileID: 635968386165995148, guid: 30d81e6e3bebe4901b23c110d7195573,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -218.25
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 635968386165995148, guid: 30d81e6e3bebe4901b23c110d7195573,
         type: 3}
@@ -5944,12 +5950,12 @@ PrefabInstance:
     - target: {fileID: 8356893042513964852, guid: 7388d9873e567e140bb3dea1574ec322,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 217.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8356893042513964852, guid: 7388d9873e567e140bb3dea1574ec322,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -238.25
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 8356893042513964852, guid: 7388d9873e567e140bb3dea1574ec322,
         type: 3}
@@ -6454,7 +6460,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -6538,7 +6544,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -6963,7 +6969,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -7405,7 +7411,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -8674,7 +8680,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -8770,7 +8776,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -9175,7 +9181,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -9644,7 +9650,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -9901,7 +9907,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -10077,7 +10083,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -10253,7 +10259,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -10951,7 +10957,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 8944827503531967264, guid: f49672d192c6d7e46adf91559ece93a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -11524,7 +11530,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
@@ -11723,7 +11729,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101097519}
     - target: {fileID: 5378604399900207044, guid: 564bb3303d9319441a6d4a43afd1eee4,
         type: 3}
       propertyPath: roombaSpeed
