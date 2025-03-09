@@ -5,7 +5,6 @@
   3. swinging pendulum 
 
 ### Pedro
-##### Integrated GameOverMenu and WinMenu changes
  1. Assigned prefabs and objects to scripts to ensure the collision and triggering of events accordigly.
 
  2. Implemented CinemaMachine plugin following online tutorial for as a means of learning aid.
@@ -14,8 +13,9 @@
 
  4. Implemented player model, mechanics and animations.
 
- 5. Assited teams members.
+ 5. Integrated GameOverMenu and WinMenu changes
 
+ 6. Assited team members.
 
 ##### Sources
   1. Third Person Shooter (Unity Tutorial) Ep 1 Movement and Camera https://www.youtube.com/watch?v=KCYr5pFC6Sw&list=PLX_yguE0Oa8QmfmFiMM9_heLBeSA6sNKx
