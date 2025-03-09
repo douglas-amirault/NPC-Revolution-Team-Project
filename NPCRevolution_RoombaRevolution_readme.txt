@@ -1,4 +1,4 @@
-Start Scene File: ???
+Start Scene File: Scenes/Menu.unity
 
 How to Play: 
 

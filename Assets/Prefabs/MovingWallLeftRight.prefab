@@ -129,6 +129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695497828461860
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695497829507376
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695498092638994
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695498113538999
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695498241499926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,8 +1178,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 10, z: 100}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 70, y: 20, z: 12}
+  m_Center: {x: 0, y: -3, z: 0}
 --- !u!114 &-6951739823971786863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,7 +1193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killerWallSound: {fileID: 8300000, guid: 6e878c38208699141988bd75a8bb984f, type: 3}
-  soundVolume: 0.1
+  soundVolume: 0.5
 --- !u!1 &5505695498401379128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695498458768510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695498916936639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,6 +2462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499122723744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,6 +2723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499172051991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,6 +2951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499365706532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,6 +3115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499446567748
 GameObject:
   m_ObjectHideFlags: 0
@@ -3418,6 +3440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499616561597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,6 +3701,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499652174463
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,6 +4059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499735451789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,6 +4190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}
 --- !u!1 &5505695499768786800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,3 +4387,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knifeSound: {fileID: 8300000, guid: 8911bfc6ebefa664885b8db5a84e2816, type: 3}
+  gameOverScreen: {fileID: 2715820820395560992, guid: 2e4ef4d2b2111d7459a761ae6f59b3b8,
+    type: 3}

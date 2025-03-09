@@ -9,7 +9,6 @@ using UnityEngine.AI;
 // subset of roomba: won't give warning but no waypoints and has extra detection for 
 public class ChasingRoomba : Roomba
 {
-
     // Start is called before the first frame update
     void Start()
     {
@@ -28,13 +27,20 @@ public class ChasingRoomba : Roomba
             if (player != null)
             {
                 // rbody didn't want to work so I used transform
+                // DG: Set y to 0 bc Roomba has taken off for flight
+                Vector3 direction = player.position - transform.position;
+                // direction.y = 0;
+
                 transform.rotation = Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
+                        Quaternion.LookRotation(direction, Vector3.up),
                         Time.deltaTime * 2);
 
                 // identify when roomba is ready by if it got past pre-charge animation
+                // F.M.G: yes, it is supposed to have slow charging to give roomba ample time to turn to player
+                //     and let the charging animation play out
+                //     if you want to tune the charging speed, please adjust the animation controller
                 string clipName = anim.GetCurrentAnimatorClipInfo(0)[0].clip.ToString();
-                if( clipName.StartsWith("ChasingRoombaRun"))
+                if (clipName.StartsWith("ChasingRoombaRun"))
                 {
                     roombaState = RoombaState.Charge;
                 }

@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
+//using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class KillerWallAudio : MonoBehaviour
 {
     public AudioClip killerWallSound;
     private AudioSource audioSource;
-    
+
     // audio clip sounds loud at normal volume
     public float soundVolume = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -24,8 +23,10 @@ public class KillerWallAudio : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.CompareTag("Player"))
         {
+
             if (killerWallSound != null)
             {
                 // Debug.Log("KillerWallAudio::OnTriggerEnter: killerWallSound was NOT null");

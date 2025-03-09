@@ -47,6 +47,10 @@ public class Roomba : MonoBehaviour
 
         navMeshAgent.speed = roombaSpeed;
 
+        // Using for FollowRoute case because they seem to stop when they don't
+        // land at exact target: https://docs.unity3d.com/540/Documentation/ScriptReference/NavMeshAgent-stoppingDistance.html
+        navMeshAgent.stoppingDistance = 0.5f;
+
         if (waypoints.Length > 0)
         {
             // set waypoint to first one
@@ -66,7 +70,9 @@ public class Roomba : MonoBehaviour
                 if (currWaypoint > -1)
                 {
                     // waypoint reached and ai not bugging out
-                    if (navMeshAgent.remainingDistance <= 0 && navMeshAgent.pathPending == false)
+                    //if (navMeshAgent.remainingDistance <= 0 && navMeshAgent.pathPending == false)
+                    // DG: See here for reason to change: https://docs.unity3d.com/540/Documentation/ScriptReference/NavMeshAgent-stoppingDistance.html
+                    if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
                     {
                         setNextWaypoint();
                     }
@@ -77,9 +83,13 @@ public class Roomba : MonoBehaviour
             // track player movement
             case RoombaState.PlayerInSights:
                 if (player != null)
-                {
+                {                
+                    // DG: Set y to 0 bc Roomba has taken off for flight
+                    Vector3 direction = player.position - transform.position;
+                    // direction.y = 0;
+
                     rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
+                        Quaternion.LookRotation(direction, Vector3.up),
                         Time.deltaTime * roombaSpeed));
                     
                     /*rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
