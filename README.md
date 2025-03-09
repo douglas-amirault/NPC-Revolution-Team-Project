@@ -1,4 +1,4 @@
-###The following was added to Fanny scene.
+### The following was added to Fanny scene.
 - Created a room and added:
   1. whooding chair that knock into Roombas, altering their path, it is a prefab
   2. roomba from prefab object
