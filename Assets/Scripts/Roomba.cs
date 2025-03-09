@@ -83,9 +83,13 @@ public class Roomba : MonoBehaviour
             // track player movement
             case RoombaState.PlayerInSights:
                 if (player != null)
-                {
+                {                
+                    // DG: Set y to 0 bc Roomba has taken off for flight
+                    Vector3 direction = player.position - transform.position;
+                    // direction.y = 0;
+
                     rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
+                        Quaternion.LookRotation(direction, Vector3.up),
                         Time.deltaTime * roombaSpeed));
                     
                     /*rbody.MoveRotation(Quaternion.LerpUnclamped(transform.rotation,
