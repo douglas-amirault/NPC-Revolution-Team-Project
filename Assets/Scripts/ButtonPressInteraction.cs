@@ -19,6 +19,7 @@ public class ButtonPressInteraction : MonoBehaviour
     public TextMeshProUGUI winText;
     private AudioSource audioSource;
     public AudioClip doorLevelSound;
+    public GameObject winMenuScreen;
 
     void Start()
     {
@@ -30,7 +31,8 @@ public class ButtonPressInteraction : MonoBehaviour
         
         if (currentSceneName == "Level 3")
         {
-            winText.gameObject.SetActive(false);
+            //winText.gameObject.SetActive(false);
+            winMenuScreen.SetActive(false);
         }
     }
 
@@ -62,8 +64,10 @@ public class ButtonPressInteraction : MonoBehaviour
             else if (currentSceneName == "Level 3")
             {
                 audioSource.PlayOneShot(doorLevelSound);
-                winText.gameObject.SetActive(true);
-                winText.text = "You Win!";
+                //winText.gameObject.SetActive(true);
+                //winText.text = "You Win!";
+                StartCoroutine(LoadDelay(1.5f));
+                winMenuScreen.SetActive(true);
             }
         }
     }
@@ -72,5 +76,11 @@ public class ButtonPressInteraction : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(levelName);
+    }
+
+    private IEnumerator LoadDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Time.timeScale = 0f;
     }
 }
