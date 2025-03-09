@@ -11,6 +11,7 @@ public class InGameMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) // Press ESC to toggle menu
         {
+            Debug.Log("Esc Button Clicked!");
             if (isPaused)
             {
                 ResumeGame();
@@ -44,6 +45,7 @@ public class InGameMenu : MonoBehaviour
 
     public void RestartLevel()
     {
+        Debug.Log("Restart Clicked!");
         Time.timeScale = 1f; // Reset time scale
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Reload current scene
     }
