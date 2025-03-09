@@ -8,6 +8,9 @@ TagManager:
   - Obstacle
   - Ground
   - Waypoint
+  - Button
+  - Door
+  - Knife
   layers:
   - Default
   - TransparentFX

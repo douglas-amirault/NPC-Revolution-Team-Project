@@ -6,14 +6,18 @@ public class KnifeTrigger : MonoBehaviour
 {
     public AudioClip knifeSound;
     private AudioSource audioSource;
+    public GameObject gameOverScreen;
     // Start is called before the first frame update
     void Start()
     {
+       gameOverScreen.SetActive(false);
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null) 
         {
             // Debug.Log("KnifeTrigger::OnTriggerEnter: No AudioSource component found. Dynamically adding after collision.");
+
         }
+
     }
 
     // Update is called once per frame
@@ -49,6 +53,8 @@ public class KnifeTrigger : MonoBehaviour
                 // Debug.Log("KnifeTrigger::OnTriggerEnter: knifeSound was null - no audio played.");
             }
             Debug.Log("KnifeTrigger::OnTriggerEnter: Struck by knife on killer wall. gg no re.");
+            Debug.Log("GAME OVER KNIFE");
+            gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
         }
     }

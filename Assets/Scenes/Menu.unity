@@ -122,6 +122,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &130251186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1190436444833105978, guid: 9711eaceff8b82b4e8cb3619d1d80698,
+    type: 3}
+  m_PrefabInstance: {fileID: 1087541972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &130251187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130251186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f3e62e71f8ed94fa61bf2f11ffb8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &408726046
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +614,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1127710579}
+      objectReference: {fileID: 130251187}
     - target: {fileID: 1190436445780825578, guid: 9711eaceff8b82b4e8cb3619d1d80698,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

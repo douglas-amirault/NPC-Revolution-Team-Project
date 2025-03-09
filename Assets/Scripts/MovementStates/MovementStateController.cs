@@ -112,6 +112,14 @@ public class MovementStateController : MonoBehaviour
 
     private void OnCollisionEnter(Collision c)
     {
+        
+        if (c.transform.gameObject.tag == "Knife")
+        {
+            //Time.timeScale = 0f;
+            
+            //gameOverScreen.SetActive(true);
+
+        }
 
         // TODO: end game stuff here!!!!
         // game over on bad touch obstacles
@@ -119,7 +127,7 @@ public class MovementStateController : MonoBehaviour
         {
             Time.timeScale = 0f;
             Debug.Log("Game Over");
-            
+            gameOverScreen.SetActive(true);
 
         }
 
