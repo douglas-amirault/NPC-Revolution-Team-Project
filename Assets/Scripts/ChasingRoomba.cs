@@ -31,8 +31,12 @@ public class ChasingRoomba : Roomba
             if (player != null)
             {
                 // rbody didn't want to work so I used transform
+                // DG: Set y to 0 bc Roomba has taken off for flight
+                Vector3 direction = player.position - transform.position;
+                // direction.y = 0;
+
                 transform.rotation = Quaternion.LerpUnclamped(transform.rotation,
-                        Quaternion.LookRotation((player.position - transform.position), Vector3.up),
+                        Quaternion.LookRotation(direction, Vector3.up),
                         Time.deltaTime * 2);
 
                 // identify when roomba is ready by if it got past pre-charge animation
@@ -41,9 +45,9 @@ public class ChasingRoomba : Roomba
                 // {
                 //     roombaState = RoombaState.Charge;
                 // }
-                // DG: relying on teh animator to change clip name may have led
+                // DG: relying on the animator to change clip name may have led
                 // to slow charging - change below is consistent with lectures
-                // where we use delta time to make things indpendent of frame
+                // where we use delta time to make things independent of frame
                 // rate. This seems to speed charging and improve gameplay.
                 chargeTimer += Time.deltaTime;
                 if (chargeTimer >= chargeDelay)
@@ -59,8 +63,12 @@ public class ChasingRoomba : Roomba
             // on player and missed. Here we continue to update rotation.
             if (player != null)
             {
+                // DG: Set y to 0 bc Roomba has taken off for flight
+                Vector3 direction = player.position - transform.position;
+                // direction.y = 0;
+
                 transform.rotation = Quaternion.LerpUnclamped(transform.rotation,
-                    Quaternion.LookRotation((player.position - transform.position), Vector3.up),
+                    Quaternion.LookRotation(direction, Vector3.up),
                     Time.deltaTime * 2);
             }
             rbody.AddForce( transform.forward * roombaSpeed, ForceMode.Impulse);
