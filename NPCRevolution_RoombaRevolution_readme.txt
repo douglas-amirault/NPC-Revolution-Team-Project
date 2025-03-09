@@ -63,12 +63,12 @@ Jumping on its power button will turn it off.
 Past the standard roomba is a series of shelves where the Jumping Roombas reside. 
 These roombas can navigate jumpable surfaces...such as surprising the player by falling from above. 
 
-Past that is a series of hallways with moving cabinets. They move between an specific coordinate range and each speed is different. 
+Past that is a series of hallways with moving cabinets. They move between a specific coordinate range and each speed is different. 
 
 After another killer wall is a section of standard roombas, and past that are the chasing roombas. 
 These use rigidbody instead of navmesh, and when in range, they will charge up (as indicated by the change in eye color resembling a traffic light)
 And once charged up, they will zoom towards wherever they are facing until they hit a wall. High-speed roomba roomba flying towards you, fun.
-If you make it past those, you reach the door. Congradulations! 
+If you make it past those, you reach the door. Congratulations! 
 
 **Level 3**
 This level seems trivially easy at first, with the door and button being in sight at the start of the level and no roombas to be found.
@@ -76,10 +76,10 @@ However, upon trying to reach the door, the player discovers that it is blocked 
 the level, they discover an elevator that takes them up to another, smaller level. The first part of this level is a maze with roombas
 lurking around. The second part is a minefield of roombas, and the last part is also a minefield, but with the roombas being the charging
 type and them also being located between 4 mirrors. Upon clearing these obstacles, the player falls down a glass chute into the level
-finish are that they could not reach at the start.
+finish area that they could not reach at the start.
 
 Known Bugs: 
-
+- No known bugs.
 
 Team Contributions:
 
@@ -101,15 +101,15 @@ Assets/Audio/Music/Tristan_Nolan/Nox - Dark & Futuristic Music Pack
 
 Implemented the player movement and camera controls. This includes all scripts in Assets/Scripts/MovementStates.
 
-Assigned prefabs and objects to scripts to ensure the collision and triggering of events accordigly.
+Assigned prefabs and objects to scripts to ensure the collision and triggering of events accordingly.
 
-Implemented CinemaMachine plugin following online tutorial for as a means of learning aid.
+Implemented Cinemachine plugin following online tutorial for as a means of learning aid.
 
 Verified Cinemachine implementation by referencing official documentation https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html
 
 Integrated GameOverMenu and WinMenu changes
 
-Assited team members.
+Assisted team members.
 
 External Resources:
 
@@ -170,7 +170,7 @@ Assets/External/SciFiOfficeLite
 Faith designed and implemented the roombas enemies. This includes putting together the model from Unity primitive objects, 
 the ChasingRoomba.cs, JumpingRoomba.cs, and Roomba.cs scripts, creating custom animations in Animations/EnemyAnimations, 
 and combining these elements to make the three roomba prefabs objects in Prefabs. She also designed layout of the level2.unity scene.
-Additional supplental assets created included Prefab/ClimbableWall.prefab and Prefab/waypoint.prefab. 
+Additional supplemental assets created included Prefab/ClimbableWall.prefab and Prefab/waypoint.prefab. 
 Also did a little debugging for Assets/Scripts/FileCabinetMover.cs
 
 No external assets were used.
@@ -183,7 +183,7 @@ Fanny Martinez Contributions
   ** Created the related scripts: Assets/Scripts/Menu.cs and Assets/Scripts/GameQuitter.cs
 • Designed and implemented the In-Game to Level 1 transition system
   ** Developed the associated script: Assets/Scripts/InGameMenu.cs
-Black fillinf cabinet prefab (Assets/Prefabs/filling-cabintet) (Assets/External/Old_Office_Props)
+Black filling cabinet prefab (Assets/Prefabs/filling-cabinet) (Assets/External/Old_Office_Props)
       Source: https://assetstore.unity.com/packages/3d/props/interior/old-office-props-free-53735
   
 
