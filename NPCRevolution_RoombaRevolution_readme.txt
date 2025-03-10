@@ -82,7 +82,7 @@ type and them also being located between 4 mirrors. Upon clearing these obstacle
 finish area that they could not reach at the start.
 
 Known Bugs: 
-- No known bugs.
+- It appears that the level3 post-maze roomba of standard roombas might not ahve the roombas show up. This is only in build, not in the editor
 
 Team Contributions:
 
