@@ -342,6 +342,8 @@ GameObject:
   - component: {fileID: 5505695497851103939}
   - component: {fileID: 5505695497851103936}
   - component: {fileID: 5505695497851103937}
+  - component: {fileID: 708891520637570023}
+  - component: {fileID: 2067557022434807470}
   m_Layer: 0
   m_Name: MovingWall
   m_TagString: Untagged
@@ -480,6 +482,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &708891520637570023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505695497851103943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1, z: 4}
+  m_Center: {x: 0.000000059604645, y: 0.000000059604645, z: 0}
+--- !u!114 &2067557022434807470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5505695497851103943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62fa3a9b6c1a7d448cbb589db89055e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killerWallSound: {fileID: 8300000, guid: 6e878c38208699141988bd75a8bb984f, type: 3}
+  soundVolume: 0.5
 --- !u!1 &5505695497931360987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,8 +1171,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5505695498354687242}
-  - component: {fileID: -2202101348004973171}
-  - component: {fileID: -6951739823971786863}
   m_Layer: 0
   m_Name: MovingWallLeftRight
   m_TagString: Untagged
@@ -1167,33 +1194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &-2202101348004973171
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5505695498354687243}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 70, y: 20, z: 12}
-  m_Center: {x: 0, y: -3, z: 0}
---- !u!114 &-6951739823971786863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5505695498354687243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62fa3a9b6c1a7d448cbb589db89055e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  killerWallSound: {fileID: 8300000, guid: 6e878c38208699141988bd75a8bb984f, type: 3}
-  soundVolume: 0.5
 --- !u!1 &5505695498401379128
 GameObject:
   m_ObjectHideFlags: 0
