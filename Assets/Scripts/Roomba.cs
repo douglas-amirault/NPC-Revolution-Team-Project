@@ -36,6 +36,9 @@ public class Roomba : MonoBehaviour
     public GameObject[] waypoints;
     private int currWaypoint = -1; // no waypoint at moment
 
+    // audios
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +47,7 @@ public class Roomba : MonoBehaviour
         anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         rbody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
 
         navMeshAgent.speed = roombaSpeed;
 
@@ -137,6 +141,12 @@ public class Roomba : MonoBehaviour
         navMeshAgent.isStopped = true;
         rbody.freezeRotation = true;
 
+        // warning audio stop
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+
         anim.Play("RoombaOff");
     }
 
@@ -150,6 +160,12 @@ public class Roomba : MonoBehaviour
         rbody.freezeRotation = true;
         Debug.Log("Player in sights");
 
+        // warning audio play
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
         anim.SetBool("Alert", true);
     }
 
@@ -157,6 +173,12 @@ public class Roomba : MonoBehaviour
     {
         // Debug.Log("Roomba gave up");
         roombaState = RoombaState.FollowRoute;
+
+        // warning audio stop
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
 
         anim.SetBool("Alert", false);
     }
@@ -169,6 +191,10 @@ public class Roomba : MonoBehaviour
         roombaState = RoombaState.ChasePlayer;
 
         Debug.Log("Chasing Player");
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
 
         anim.SetBool("Chasing", true);
     }
@@ -178,6 +204,11 @@ public class Roomba : MonoBehaviour
         // Debug.Log("MUST HAVE BEEN THE WIND");
         navMeshAgent.SetDestination(rbody.position);
         roombaState = RoombaState.PlayerInSights;
+
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
 
         anim.SetBool("Chasing", false);
     }
