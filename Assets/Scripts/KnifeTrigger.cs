@@ -55,6 +55,8 @@ public class KnifeTrigger : MonoBehaviour
             Debug.Log("KnifeTrigger::OnTriggerEnter: Struck by knife on killer wall. gg no re.");
             Debug.Log("GAME OVER KNIFE");
             gameOverScreen.SetActive(true);
+            Cursor.lockState = CursorLockMode.None; // Unlock cursor for UI
+            Cursor.visible = true;
             Time.timeScale = 0f;
         }
     }

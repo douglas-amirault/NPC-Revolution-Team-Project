@@ -16,7 +16,9 @@ public class InGameMenu : MonoBehaviour
             {
                 ResumeGame();
             }
-            else
+
+            // modification: don't overlap pause when another menu is present
+            else if (Time.timeScale > 0)
             {
                 PauseGame();
             }

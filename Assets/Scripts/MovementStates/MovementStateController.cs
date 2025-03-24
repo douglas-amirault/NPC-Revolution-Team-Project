@@ -128,6 +128,8 @@ public class MovementStateController : MonoBehaviour
             Time.timeScale = 0f;
             Debug.Log("Game Over");
             gameOverScreen.SetActive(true);
+            Cursor.lockState = CursorLockMode.None; // Unlock cursor for UI
+            Cursor.visible = true;
 
         }
 
@@ -141,6 +143,8 @@ public class MovementStateController : MonoBehaviour
                 Time.timeScale = 0f;
                 Debug.Log("Game Over");
                 gameOverScreen.SetActive(true);
+                Cursor.lockState = CursorLockMode.None; // Unlock cursor for UI
+                Cursor.visible = true;
             }
 
         }
