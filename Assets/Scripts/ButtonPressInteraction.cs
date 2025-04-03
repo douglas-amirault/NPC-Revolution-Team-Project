@@ -64,10 +64,7 @@ public class ButtonPressInteraction : MonoBehaviour
             else if (currentSceneName == "Level 3")
             {
                 audioSource.PlayOneShot(doorLevelSound);
-                //winText.gameObject.SetActive(true);
-                //winText.text = "You Win!";
-                StartCoroutine(LoadDelay(1.5f));
-                winMenuScreen.SetActive(true);
+                StartCoroutine(LoadLevelWithDelay("YouWin", 1.5f));
             }
         }
     }
