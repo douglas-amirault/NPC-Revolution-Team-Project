@@ -33,6 +33,7 @@ public class ButtonPressInteraction : MonoBehaviour
         {
             //winText.gameObject.SetActive(false);
             winMenuScreen.SetActive(false);
+            StartCoroutine(DelayedLightingUpdate());
         }
     }
 
@@ -72,6 +73,8 @@ public class ButtonPressInteraction : MonoBehaviour
     private IEnumerator LoadLevelWithDelay(string levelName, float delay)
     {
         yield return new WaitForSeconds(delay);
+        // DG: see OnSceneLoaded() below and https://docs.unity3d.com/6000.0/Documentation/ScriptReference/SceneManagement.SceneManager-sceneLoaded.html
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(levelName);
     }
 
@@ -79,5 +82,24 @@ public class ButtonPressInteraction : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Time.timeScale = 0f;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // DG: there was issue where Level 2 lighting caused Level 3 lighting to act weird (i.e., be dark)
+        // I added distinct light setting to level 2 & 3. Using DynamicGI.UpdateEnvironment() to fix light when it loads (see this post: https://www.reddit.com/r/Unity3D/comments/128poyx/different_lighting_in_build/)
+        // OnSceneLoaded() is custom callback - see Unity docs for more: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/SceneManagement.SceneManager-sceneLoaded.html
+        // Also having light issue in editor seems fairly common but the build is not impacted: https://discussions.unity.com/t/lights-get-darker-when-loading-scene/175994/3
+        if (scene.name == "Level 3")
+        {
+            DynamicGI.UpdateEnvironment();
+        }
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private IEnumerator DelayedLightingUpdate()
+    {
+        yield return new WaitForEndOfFrame();
+        DynamicGI.UpdateEnvironment();
     }
 }
