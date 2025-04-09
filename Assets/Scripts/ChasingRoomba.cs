@@ -14,6 +14,7 @@ public class ChasingRoomba : Roomba
     {
         anim = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
+        roombaState = RoombaState.Charge;
 
         roombaState = RoombaState.Idle;
     }
@@ -43,6 +44,12 @@ public class ChasingRoomba : Roomba
                 if (clipName.StartsWith("ChasingRoombaRun"))
                 {
                     roombaState = RoombaState.Charge;
+
+                    // chase player audio start
+                    if (audioSource != null)
+                    {
+                        audioSource.Play();
+                    }
                 }
             }
         }
@@ -57,6 +64,12 @@ public class ChasingRoomba : Roomba
         // Debug.Log("Roomba jumping turned off");
         roombaState = RoombaState.PowerOff;
         rbody.freezeRotation = true;
+
+        // chase player audio stop
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
 
         anim.Play("ChasingRoombaOff");
     }
@@ -85,6 +98,12 @@ public class ChasingRoomba : Roomba
         {
             // Debug.Log("bonk");
             roombaState = RoombaState.Idle;
+
+            // chase player audio stop
+            if (audioSource != null)
+            {
+                audioSource.Stop();
+            }
 
             anim.SetBool("ChargeRun", false);
         }

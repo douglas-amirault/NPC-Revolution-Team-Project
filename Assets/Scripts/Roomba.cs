@@ -37,7 +37,7 @@ public class Roomba : MonoBehaviour
     private int currWaypoint = -1; // no waypoint at moment
 
     // audios
-    private AudioSource audioSource;
+    protected AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -141,7 +141,7 @@ public class Roomba : MonoBehaviour
         navMeshAgent.isStopped = true;
         rbody.freezeRotation = true;
 
-        // warning audio stop
+        // chase player audio stop
         if (audioSource != null)
         {
             audioSource.Stop();
@@ -160,7 +160,7 @@ public class Roomba : MonoBehaviour
         rbody.freezeRotation = true;
         Debug.Log("Player in sights");
 
-        // warning audio play
+        // chase player audio play
         if (audioSource != null)
         {
             audioSource.Play();
@@ -174,7 +174,7 @@ public class Roomba : MonoBehaviour
         // Debug.Log("Roomba gave up");
         roombaState = RoombaState.FollowRoute;
 
-        // warning audio stop
+        // chase player audio stop
         if (audioSource != null)
         {
             audioSource.Stop();
@@ -193,7 +193,7 @@ public class Roomba : MonoBehaviour
         Debug.Log("Chasing Player");
         if (audioSource != null)
         {
-            audioSource.Stop();
+            audioSource.Play();
         }
 
         anim.SetBool("Chasing", true);
@@ -205,9 +205,10 @@ public class Roomba : MonoBehaviour
         navMeshAgent.SetDestination(rbody.position);
         roombaState = RoombaState.PlayerInSights;
 
+        // chase player audio stop
         if (audioSource != null)
         {
-            audioSource.Play();
+            audioSource.Stop();
         }
 
         anim.SetBool("Chasing", false);
