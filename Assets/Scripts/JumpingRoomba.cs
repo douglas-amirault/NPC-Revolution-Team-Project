@@ -17,6 +17,7 @@ public class JumpingRoomba : Roomba
         anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         rbody = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
 
         navMeshAgent.speed = roombaSpeed;
 
@@ -42,6 +43,12 @@ public class JumpingRoomba : Roomba
         navMeshAgent.isStopped = true;
         rbody.freezeRotation = true;
 
+        // chase player audio stop
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+
         anim.Play("JumpingRoombaOff");
     }
 
@@ -52,6 +59,12 @@ public class JumpingRoomba : Roomba
         //navMeshAgent.SetDestination(player.position);
         roombaState = RoombaState.ChasePlayer;
 
+        // chase player audio play
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
         anim.SetBool("Chasing", true);
     }
 
@@ -61,6 +74,12 @@ public class JumpingRoomba : Roomba
         //navMeshAgent.SetDestination(rbody.position);
         navMeshAgent.ResetPath();
         roombaState = RoombaState.Idle;
+
+        // chase player audio stop
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
 
         anim.SetBool("Chasing", false);
     }
