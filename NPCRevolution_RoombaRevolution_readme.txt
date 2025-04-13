@@ -143,7 +143,9 @@ This included setting up dynamic instantiation of an AudioSource object to a pla
 wall sound when the player is near, and adding a script to the blade on each wall's knife that
 ends the game and plays a stabbing sound. It also involved developing the moving wall animation
 and setting it up in Animator. He identified the external audio files and edited them.
-He also designed and implemented the level2.unity scene.
+He also designed and implemented the level2.unity scene, as well as the Intro scene with scrolling 
+text and piano audio. Derek implemented the carpet and wall textures in Level 2 and created
+ceiling lighting using primitive 3D objects and light objects. 
 
 **Scripts**
  - Wrote: Assets\Scripts\KnifeTrigger.cs, Assets\Scripts\KillerWallAudio.cs
@@ -152,6 +154,7 @@ He also designed and implemented the level2.unity scene.
  - Edited Assets\Scripts\Roomba.cs to handle patrolling issues
  - Edited Assets\Scripts\ChasingRoomba.cs to speed charging and attack, and ensure
    Roomba AI enemies target player.
+ - Wrote Assets\Scripts\IntroLoader.cs to (scrolls narrative and lets player click)
 
 
 External assets: 
@@ -167,6 +170,9 @@ Audio/SFX/killer_wall_sound.mp3
 
 Assets/External/SciFiOfficeLite
     • https://assetstore.unity.com/packages/3d/environments/sci-fi/free-sci-fi-office-pack-195067
+
+Assets/Audio/Music/Daniel Beraza
+    • https://samplefocus.com/categories/piano (Full Glide Piano - Classical Sad Loop, Daniel Beraza)
 
 - Faith Madeoy Gault
 
