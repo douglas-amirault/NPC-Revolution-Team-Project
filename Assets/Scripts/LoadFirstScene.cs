@@ -8,6 +8,6 @@ public class LoadFirstScene : MonoBehaviour
     public void FirstScene()
     {
         Debug.Log("Activate!");
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Intro");
     }
 }
