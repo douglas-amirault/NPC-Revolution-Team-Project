@@ -14,7 +14,28 @@ public class ChasingRoomba : Roomba
     {
         anim = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
-        roombaState = RoombaState.Charge;
+
+        // audio setup
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        foreach (AudioSource audio in audioSources)
+        {
+            if (audio.clip.name == "RoombaWarning")
+            {
+                audioSource = audio;
+            }
+
+            // since no poweroff, we use secondary audio as a cute bonk noise
+            else if (audio.clip.name == "zoomba-bonk")
+            {
+                powerOff = audio;
+            }
+
+            else if (audio.clip.name == "game-over-roomba")
+            {
+                gameOverSound = audio;
+            }
+        }
+
 
         roombaState = RoombaState.Idle;
     }
@@ -96,6 +117,12 @@ public class ChasingRoomba : Roomba
     {
         if (roombaState == RoombaState.Charge)
         {
+            // bonk nosie if we didn't hit a non-player object (like a wall)
+            if (!collision.gameObject.CompareTag("Player") && powerOff != null)
+            {
+                powerOff.Play();
+            }
+
             // Debug.Log("bonk");
             roombaState = RoombaState.Idle;
 

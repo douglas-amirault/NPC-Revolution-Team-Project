@@ -38,6 +38,8 @@ public class Roomba : MonoBehaviour
 
     // audios
     protected AudioSource audioSource;
+    protected AudioSource powerOff;
+    protected AudioSource gameOverSound;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +49,25 @@ public class Roomba : MonoBehaviour
         anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         rbody = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();
+
+        // audio setup
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        foreach (AudioSource audio in audioSources){
+            if(audio.clip.name == "RoombaWarning")
+            {
+                audioSource = audio;
+            }
+            else if (audio.clip.name == "power-down")
+            {
+                powerOff = audio;
+            }
+            else if (audio.clip.name == "game-over-roomba")
+            {
+                gameOverSound = audio;
+            }
+        }
+
+        //audioSource = GetComponent<AudioSource>();
 
         navMeshAgent.speed = roombaSpeed;
 
@@ -130,13 +150,11 @@ public class Roomba : MonoBehaviour
 
     public bool IsPowerOn()
     {
-        // Debug.Log(roombaState);
         return !(roombaState == RoombaState.PowerOff);
     }
 
     public virtual void TurnRoombaOff()
     {
-        // Debug.Log("Roomba turned off");
         roombaState = RoombaState.PowerOff;
         navMeshAgent.isStopped = true;
         rbody.freezeRotation = true;
@@ -154,11 +172,9 @@ public class Roomba : MonoBehaviour
     public void Warning()
     {
         // stop what we're doing there's a person
-        // Debug.Log("Roomba detected a human");
         navMeshAgent.SetDestination( rbody.position );
         roombaState = RoombaState.PlayerInSights;
         rbody.freezeRotation = true;
-        Debug.Log("Player in sights");
 
         // chase player audio play
         if (audioSource != null)
@@ -232,6 +248,27 @@ public class Roomba : MonoBehaviour
 
         navMeshAgent.SetDestination(waypoints[currWaypoint].transform.position);
         //Debug.Log(currWaypoint);
+    }
+
+    // event trigger to have audio power off
+    public virtual void PowerOffSound()
+    {
+        if (powerOff != null)
+        {
+            powerOff.Play();
+        }
+    }
+
+    public virtual void PlayGameOverSoud()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+        if (gameOverSound != null)
+        {
+            gameOverSound.Play();
+        }
     }
 
 }
