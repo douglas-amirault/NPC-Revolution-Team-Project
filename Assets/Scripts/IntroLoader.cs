@@ -13,7 +13,7 @@ public class IntroLoader : MonoBehaviour
         if (Input.anyKeyDown || Input.GetMouseButtonDown(0) || timer >= autoLoadDelay)
         {
             Debug.Log("Loading Start Menu");
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Level 1");
         }
     }
 }

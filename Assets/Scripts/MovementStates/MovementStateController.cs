@@ -140,6 +140,9 @@ public class MovementStateController : MonoBehaviour
             Roomba enemyScript = c.gameObject.GetComponent<Roomba>();
             if (enemyScript.IsPowerOn())
             {
+                // also play gameOverSound
+                enemyScript.PlayGameOverSoud();
+
                 Time.timeScale = 0f;
                 Debug.Log("Game Over");
                 gameOverScreen.SetActive(true);
