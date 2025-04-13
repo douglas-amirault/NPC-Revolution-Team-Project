@@ -8,7 +8,7 @@ public class InGameMenu : MonoBehaviour
     private bool isPaused = false;
 
     
-    // do not have cursor visible on scene load
+    // do not have cursor visible on level start
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked; // Lock cursor back to game
