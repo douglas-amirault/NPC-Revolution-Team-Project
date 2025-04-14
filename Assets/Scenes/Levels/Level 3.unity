@@ -1535,8 +1535,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278914040
+  m_fontColor: {r: 0.9716981, g: 0.041251317, b: 0.041251317, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10122,24 +10122,24 @@ Transform:
   - {fileID: 359092725}
   - {fileID: 145439503}
   - {fileID: 221971838}
-  - {fileID: 1348887861}
   - {fileID: 1498647495}
+  - {fileID: 1348887861}
   - {fileID: 782200191}
   - {fileID: 1692111459}
+  - {fileID: 1120059975}
   - {fileID: 1746625422}
   - {fileID: 233433751}
   - {fileID: 914867073}
-  - {fileID: 827644422}
   - {fileID: 927285426}
-  - {fileID: 1120059975}
   - {fileID: 1585037692}
   - {fileID: 1260428157}
   - {fileID: 461402555}
+  - {fileID: 827644422}
   - {fileID: 2040421085}
   - {fileID: 1625303915}
+  - {fileID: 348941083}
   - {fileID: 934455823}
   - {fileID: 1408631846}
-  - {fileID: 348941083}
   - {fileID: 1093738092}
   - {fileID: 1837390658}
   - {fileID: 835885383}
