@@ -7,6 +7,14 @@ public class InGameMenu : MonoBehaviour
     public GameObject player; // Assign the Player GameObject
     private bool isPaused = false;
 
+    
+    // do not have cursor visible on level start
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; // Lock cursor back to game
+        Cursor.visible = false; // Hide cursor when resuming
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) // Press ESC to toggle menu

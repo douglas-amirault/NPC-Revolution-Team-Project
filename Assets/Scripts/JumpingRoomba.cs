@@ -17,7 +17,24 @@ public class JumpingRoomba : Roomba
         anim = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         rbody = GetComponent<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();
+
+        // audio setup
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        foreach (AudioSource audio in audioSources)
+        {
+            if (audio.clip.name == "RoombaWarning")
+            {
+                audioSource = audio;
+            }
+            else if (audio.clip.name == "power-down")
+            {
+                powerOff = audio;
+            }
+            else if (audio.clip.name == "game-over-roomba")
+            {
+                gameOverSound = audio;
+            }
+        }
 
         navMeshAgent.speed = roombaSpeed;
 

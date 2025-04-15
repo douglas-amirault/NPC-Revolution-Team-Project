@@ -182,7 +182,16 @@ and combining these elements to make the three roomba prefabs objects in Prefabs
 Additional supplemental assets created included Prefab/ClimbableWall.prefab and Prefab/waypoint.prefab. 
 Also did a little debugging for Assets/Scripts/FileCabinetMover.cs
 
-No external assets were used.
+External assets: 
+
+Audio/SFX/power-down.mp3
+    • https://pixabay.com/sound-effects/power-down-42676/
+
+Audio/SFX/zoomba-bonk.mp3 [trimmed]
+    • https://pixabay.com/sound-effects/bonk-sound-effect-36055/
+
+Audio/SFX/game-over-roomba.mp3
+    • https://pixabay.com/sound-effects/game-over-39-199830/
 
 Fanny Martinez Contributions
 
