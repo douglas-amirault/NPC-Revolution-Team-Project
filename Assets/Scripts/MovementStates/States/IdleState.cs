@@ -10,7 +10,14 @@ public class IdleState : MovementStateBase
     public override void UpdateState(MovementStateController movement)
     {
         // Prevents player input if clicking UI
-       // if (EventSystem.current.IsPointerOverGameObject()) return;
+        // if (EventSystem.current.IsPointerOverGameObject()) return;
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            movement.nextState = this;
+            movement.ChangeState(movement.JumpState);
+            Debug.Log("Jump Pressed");
+        }
 
         if (movement.direction.magnitude > 0.1f)
         {
@@ -20,17 +27,12 @@ public class IdleState : MovementStateBase
                 Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 movement.ChangeState(movement.RunState);
-                Debug.Log("Key Pressed");
+                Debug.Log("Run Pressed");
             }
             else
             {
                 movement.ChangeState(movement.IdleState);
             }
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            movement.nextState = this;
-            movement.ChangeState(movement.JumpState);
         }
     }
 }

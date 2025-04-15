@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -28,6 +29,9 @@ public class MovementStateController : MonoBehaviour
     [SerializeField] float jumpValue = 60;
     [SerializeField] float descentValue = -20;
     Vector3 velocityValue;
+
+    public bool isGrounded;
+    public bool isDead;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +72,16 @@ public class MovementStateController : MonoBehaviour
 
         direction = transform.forward * verticalInput + transform.right * horizontalInput;
 
-        controllerVar.Move(direction * movementSpeed * Time.deltaTime);
+        if(isDead == false)
+        {
+            controllerVar.Move(direction * movementSpeed * Time.deltaTime);
+        }
+        else
+        {
+            controllerVar.Move(direction * 0 * Time.deltaTime);
+        }
+
+        
     }
 
     /*public bool IsGrounded()
@@ -112,7 +125,14 @@ public class MovementStateController : MonoBehaviour
 
     private void OnCollisionEnter(Collision c)
     {
-        
+
+        if (c.transform.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
+            animator.SetBool("isGrounded", true);
+            Debug.Log("Touch Ground: " + isGrounded);
+        }
+
         if (c.transform.gameObject.tag == "Knife")
         {
             //Time.timeScale = 0f;
@@ -125,12 +145,18 @@ public class MovementStateController : MonoBehaviour
         // game over on bad touch obstacles
         if (c.transform.gameObject.tag == "Obstacle")
         {
-            Time.timeScale = 0f;
+            //Time.timeScale = 0f;
+            StartCoroutine(PauseWithDelay(3f));
             Debug.Log("Game Over");
             gameOverScreen.SetActive(true);
             Cursor.lockState = CursorLockMode.None; // Unlock cursor for UI
             Cursor.visible = true;
 
+            //Dead
+            isDead = true;
+            animator.SetBool("isDead", true);
+            Debug.Log("isDead: " + isDead);
+            
         }
 
         // shut off roomba instead of vice versa
@@ -143,13 +169,31 @@ public class MovementStateController : MonoBehaviour
                 // also play gameOverSound
                 enemyScript.PlayGameOverSoud();
 
-                Time.timeScale = 0f;
+                //Time.timeScale = 0f;
+                StartCoroutine(PauseWithDelay(3f));
                 Debug.Log("Game Over");
                 gameOverScreen.SetActive(true);
                 Cursor.lockState = CursorLockMode.None; // Unlock cursor for UI
                 Cursor.visible = true;
+
+                //Dead
+                isDead = true;
+                animator.SetBool("isDead", true);
+                Debug.Log("isDead: " + isDead);
+               
+
             }
 
+        }
+    }
+
+    private void OnCollisionExit(Collision c)
+    {
+        if (c.transform.gameObject.tag == "Ground")
+        {
+            isGrounded = false;
+            animator.SetBool("isGrounded", false);
+            Debug.Log("Touch Ground: " + isGrounded);
         }
     }
 
@@ -211,6 +255,18 @@ public class MovementStateController : MonoBehaviour
                 enemyScript.OffChasePlayer();
             }
         }
+    }
+
+    IEnumerator PauseWithDelay(float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Set Time.timeScale to 0 to pause the game
+        Time.timeScale = 0f;
+
+        // Optional: Add a message to the console after the pause
+        Debug.Log("Game paused after a delay!");
     }
 }
  
