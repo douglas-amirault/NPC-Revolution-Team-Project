@@ -10,7 +10,7 @@ public class RunState : MovementStateBase
     public override void UpdateState(MovementStateController movement)
     {
         if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow)) ExitState(movement, movement.IdleState);
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             movement.animator.SetBool("Jump", true);
         }
