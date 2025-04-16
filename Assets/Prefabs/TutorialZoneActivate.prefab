@@ -59,4 +59,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TutorialMenu: {fileID: 0}
-  tutorialText: Press the arrow or wasd keys to move
+  tutorialText: Press the Arrow or WASD Keys to Move

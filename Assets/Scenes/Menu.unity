@@ -490,6 +490,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1190436444188585909, guid: 9711eaceff8b82b4e8cb3619d1d80698,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 1190436444833105974, guid: 9711eaceff8b82b4e8cb3619d1d80698,
         type: 3}
       propertyPath: m_Pivot.x
@@ -605,6 +610,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 712648390}
+    - target: {fileID: 1190436445280280076, guid: 9711eaceff8b82b4e8cb3619d1d80698,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190436445768093599, guid: 9711eaceff8b82b4e8cb3619d1d80698,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 1190436445780825578, guid: 9711eaceff8b82b4e8cb3619d1d80698,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -624,6 +639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LoadFirstScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190436445780825579, guid: 9711eaceff8b82b4e8cb3619d1d80698,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9711eaceff8b82b4e8cb3619d1d80698, type: 3}
