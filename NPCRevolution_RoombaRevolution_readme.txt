@@ -136,6 +136,9 @@ Assets/External/Advaita Assets/Low Poly Prototype Character/*:
 Assets/External/Blink/Art/Animations/Animations_Starter_Pack:
     • https://assetstore.unity.com/packages/3d/animations/free-32-rpg-animations-215058
 
+Assets/External/NPC or Player/Effort Sounds/01. Effort Grunt (Male).wav:
+    • https://assetstore.unity.com/packages/audio/sound-fx/voices/effort-sounds-male-npc-player-audio-pack-285382
+
 - Derek Griffing
 
 Derek created the "killer wall" prefab MovingWallLeftRight from primitive Unity game objects.
